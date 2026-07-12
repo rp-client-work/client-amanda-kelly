@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact AmandaKelly Co.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = { darkMode: "class", theme: { extend: {
+            "colors": {"secondary": "#bc0100", "primary": "#000000", "surface": "#f9f9f9", "on-primary": "#ffffff"},
+            "borderRadius": {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px"},
+            "spacing": {"gutter": "16px", "unit": "4px", "section-gap": "80px", "margin-desktop": "64px", "margin-mobile": "20px", "stack-md": "24px", "stack-sm": "8px"},
+            "fontFamily": {"body-md": ["Source Sans 3"], "headline-md": ["Hanken Grotesk"], "headline-lg": ["Hanken Grotesk"], "label-lg": ["Hanken Grotesk"], "display-lg": ["Hanken Grotesk"], "body-lg": ["Source Sans 3"]}
+        }}}
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<section class="min-h-[60vh] flex flex-col justify-center px-margin-mobile md:px-margin-desktop bg-primary text-white py-16 md:py-section-gap">
+<div class="max-w-[1440px] mx-auto w-full">
+<span class="font-label-lg text-label-lg uppercase tracking-widest text-secondary">Contact</span>
+<h1 class="font-display-lg text-[48px] md:text-display-lg uppercase mb-8 leading-[0.9] mt-4">Contact<br/>Amandakelly</h1>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg uppercase mb-8">Get in Touch.</h2>
+<p class="max-w-2xl font-body-lg text-body-md md:text-body-lg opacity-90">The AmandaKelly haircare team reads every message and routes it to the right desk. Choose retail support for orders and product questions, wholesale for salon and retail partnerships, or stylist terms for licensed pros. Every inquiry gets a real reply within 2 business days.</p>
+</div>
+</section>
+<section class="px-margin-mobile md:px-margin-desktop bg-white border-b border-primary">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-primary">
+<div class="py-10 px-2 md:px-8"><h3 class="font-label-lg text-label-lg uppercase mb-4">Retail Support</h3><p class="font-body-md text-on-surface-variant">Questions about an existing order, shipping, or how to get the most from a product you already own? Our support team has you covered.</p></div>
+<div class="py-10 px-2 md:px-8"><h3 class="font-label-lg text-label-lg uppercase mb-4">Wholesale Inquiries</h3><p class="font-body-md text-on-surface-variant">Salons, boutiques, and retailers who want to carry the AmandaKelly line: request the wholesale catalog and terms. We work with independent shops and global partners.</p></div>
+<div class="py-10 px-2 md:px-8"><h3 class="font-label-lg text-label-lg uppercase mb-4">Stylist Terms</h3><p class="font-body-md text-on-surface-variant">Licensed stylists get first access to new drops, industry pricing, and technical education. Apply once, unlock the network.</p></div>
+</div>
+</section>
+<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap bg-surface">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg uppercase mb-6">Direct Inquiry</h2>
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant mb-8">Not sure which desk? Send a message here and we'll route it. Real people, real replies, within 2 business days.</p>
+<div class="border-t border-primary/20 pt-8 mb-8">
+<h4 class="font-label-lg text-label-lg uppercase mb-4">Prefer social? Follow along at @amandakellycompany_</h4>
+</div>
+<div class="bg-white border border-primary p-6">
+<p class="font-body-md text-on-surface-variant">Response times: within 2 business days on all inquiries.</p>
+<p class="font-body-md text-on-surface-variant">Business hours: Mon–Fri, 9am–6pm ET.</p>
+</div>
+</div>
+<div class="bg-white border-2 border-primary p-8 md:p-10">
+<form>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div><label class="font-label-lg text-label-lg uppercase block mb-2">Full Name</label><input class="w-full border border-primary p-4 font-body-md" placeholder="Jane Smith" type="text"/></div>
+<div><label class="font-label-lg text-label-lg uppercase block mb-2">Email Address</label><input class="w-full border border-primary p-4 font-body-md" placeholder="jane@example.com" type="email"/><p class="text-xs opacity-60 mt-1">We'll only use this to reply to your message.</p></div>
+</div>
+<div class="mb-6"><label class="font-label-lg text-label-lg uppercase block mb-2">Inquiry Type</label><select class="w-full border border-primary p-4 font-body-md bg-white"><option>Order or product support</option><option>Wholesale inquiry</option><option>Stylist terms</option><option>Something else</option></select></div>
+<div class="mb-6"><label class="font-label-lg text-label-lg uppercase block mb-2">Message</label><textarea class="w-full border border-primary p-4 font-body-md" placeholder="Tell us how we can help." rows="5"></textarea></div>
+<button class="w-full bg-secondary text-white py-5 font-label-lg text-label-lg uppercase font-bold hover:bg-black transition-all" type="submit">Send Message →</button>
+</form>
+</div>
+</div>
+</section>
+<section class="px-margin-mobile md:px-margin-desktop py-16 md:py-section-gap bg-white border-t border-primary">
+<div class="max-w-[1440px] mx-auto">
+<span class="font-label-lg text-label-lg uppercase text-secondary">Our Base</span>
+<h2 class="font-headline-lg text-headline-lg uppercase mb-8 mt-2">Headquarters</h2>
+<h3 class="font-headline-md text-headline-md uppercase mb-2">Baltimore, MD</h3>
+<p class="font-body-md text-on-surface-variant mb-8">Local pickup available at checkout. Full address provided upon order confirmation.</p>
+<div class="border-t border-primary/20 pt-6"><h4 class="font-label-lg text-label-lg uppercase mb-2">Office Hours</h4><p class="font-body-md">Mon–Fri: 9:00–18:00</p><p class="font-body-md">Sat–Sun: By Appointment</p></div>
+</div>
+</section>
+</body></html>
