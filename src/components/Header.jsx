@@ -1,19 +1,24 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const leftLinks = [
-  { to: '/', label: 'Heritage' },
-  { to: '/', label: 'Collection' },
-  { to: '/', label: 'Quality' },
+  { to: '/', label: 'Home' },
+  { to: '/hair-guide', label: 'Hair Guide' },
 ];
 
 const rightLinks = [
-  { to: '/', label: 'Services' },
-  { to: '/', label: 'Experience' },
+  { to: '/contact', label: 'Contact' },
 ];
+
+function navLinkClass(isActive) {
+  return `font-display font-bold text-sm tracking-widest uppercase transition-colors hover:text-brand-red ${
+    isActive ? 'text-brand-red' : 'text-brand-black'
+  }`;
+}
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <header className="w-full sticky top-0 z-50 bg-brand-surface border-b border-brand-black">
@@ -29,11 +34,7 @@ export default function Header() {
           </button>
           <div className="hidden lg:flex items-center gap-4">
             {leftLinks.map((link) => (
-              <Link
-                key={link.label}
-                to={link.to}
-                className="font-display font-bold text-sm tracking-widest text-brand-black uppercase transition-colors hover:text-brand-red"
-              >
+              <Link key={link.label} to={link.to} className={navLinkClass(location.pathname === link.to)}>
                 {link.label}
               </Link>
             ))}
@@ -54,11 +55,7 @@ export default function Header() {
         <div className="flex-1 flex items-center justify-end gap-4">
           <div className="hidden lg:flex items-center gap-4 mr-4">
             {rightLinks.map((link) => (
-              <Link
-                key={link.label}
-                to={link.to}
-                className="font-display font-bold text-sm tracking-widest text-brand-black uppercase transition-colors hover:text-brand-red"
-              >
+              <Link key={link.label} to={link.to} className={navLinkClass(location.pathname === link.to)}>
                 {link.label}
               </Link>
             ))}
@@ -86,7 +83,7 @@ export default function Header() {
               key={link.label}
               to={link.to}
               onClick={() => setMenuOpen(false)}
-              className="font-display font-bold text-sm tracking-widest text-brand-black uppercase transition-colors hover:text-brand-red"
+              className={navLinkClass(location.pathname === link.to)}
             >
               {link.label}
             </Link>
