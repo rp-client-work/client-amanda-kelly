@@ -1,11 +1,13 @@
 import Button from '../components/Button';
 import TestimonialCard from '../components/TestimonialCard';
-import burmeseCurlyImg from '../assets/textures/burmese-curly.jpg';
-import cambodianWavyImg from '../assets/textures/cambodian-wavy.jpg';
-import straightImg from '../assets/textures/straight.jpg';
-import deepWaveImg from '../assets/textures/deep-wave.jpg';
-import indianCurlyImg from '../assets/textures/indian-curly.jpg';
-import bodyWaveImg from '../assets/textures/body-wave.jpg';
+import burmeseCurlyImg from '../assets/textures/texture-burmese-curly.webp';
+import cambodianWavyImg from '../assets/textures/texture-cambodian-wavy.webp';
+import straightImg from '../assets/textures/texture-straight.webp';
+import deepWaveImg from '../assets/textures/texture-deep-wave.webp';
+import indianCurlyImg from '../assets/textures/texture-indian-curly.webp';
+import bodyWaveImg from '../assets/textures/texture-body-wave.webp';
+import closureImg from '../assets/products/closure-4x4-hd-lace.webp';
+import frontalImg from '../assets/products/frontal-13x4-hd-lace.webp';
 
 const textures = [
   ['Burmese Curly', burmeseCurlyImg],
@@ -17,8 +19,8 @@ const textures = [
 ];
 
 const signatureTextures = [
-  ['4x4 HD Transparent Lace Closures', 'Middle-part closures on 4x4 HD transparent lace. Sized for standard sew-in and wig installs. Texture-matched to every bundle order.'],
-  ['13x4 HD Transparent Lace Frontals', 'Ear-to-ear frontals on 13x4 HD transparent lace. Available in 16 to 18 inch. Sized for full parting flexibility and natural hairline recreation.'],
+  ['4x4 HD Transparent Lace Closures', 'Middle-part closures on 4x4 HD transparent lace. Sized for standard sew-in and wig installs. Texture-matched to every bundle order.', closureImg],
+  ['13x4 HD Transparent Lace Frontals', 'Ear-to-ear frontals on 13x4 HD transparent lace. Available in 16 to 18 inch. Sized for full parting flexibility and natural hairline recreation.', frontalImg],
 ];
 
 const testimonials = [
@@ -94,9 +96,11 @@ export default function Home() {
       <section className="px-5 md:px-16 py-12 md:py-20">
         <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-8 text-center md:text-left">Closures and Frontals to Match</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {signatureTextures.map(([title, desc]) => (
+          {signatureTextures.map(([title, desc, img]) => (
             <div key={title} className="flex flex-col gap-4">
-              <div className="aspect-square bg-brand-surface border-2 border-brand-black" />
+              <div className="aspect-square bg-brand-surface border-2 border-brand-black overflow-hidden pointer-events-none">
+                <img src={img} alt={title} className="w-full h-full object-cover" draggable="false" />
+              </div>
               <div className="flex justify-between items-end border-b-2 border-brand-black pb-4">
                 <div>
                   <h3 className="font-display font-bold uppercase text-lg">{title}</h3>
