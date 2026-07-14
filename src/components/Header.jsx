@@ -1,33 +1,98 @@
-import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const links = [
-  { to: '/', label: 'Home' },
-  { to: '/hair-guide', label: 'Hair Guide' },
-  { to: '/contact', label: 'Contact' },
+const leftLinks = [
+  { to: '/', label: 'Heritage' },
+  { to: '/', label: 'Collection' },
+  { to: '/', label: 'Quality' },
+];
+
+const rightLinks = [
+  { to: '/', label: 'Services' },
+  { to: '/', label: 'Experience' },
 ];
 
 export default function Header() {
-  const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="bg-brand-black text-brand-white sticky top-0 z-50">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-5 md:px-16 py-5">
-        <Link to="/" className="font-display font-extrabold uppercase tracking-tight text-lg">
-          AmandaKelly Co.
-        </Link>
-        <nav className="flex items-center gap-6 md:gap-8">
-          {links.map((link) => (
+    <header className="w-full sticky top-0 z-50 bg-brand-surface border-b border-brand-black">
+      <nav className="max-w-[1440px] mx-auto flex items-center justify-between px-5 lg:px-16 h-16 lg:h-24">
+        {/* Left: hamburger (mobile) / nav links (desktop) */}
+        <div className="flex-1 flex items-center gap-4">
+          <button
+            aria-label="Menu"
+            onClick={() => setMenuOpen((v) => !v)}
+            className="lg:hidden flex items-center justify-center p-1 text-brand-black hover:text-brand-red transition-colors"
+          >
+            <span className="material-symbols-outlined text-2xl">menu</span>
+          </button>
+          <div className="hidden lg:flex items-center gap-4">
+            {leftLinks.map((link) => (
+              <Link
+                key={link.label}
+                to={link.to}
+                className="font-display font-bold text-sm tracking-widest text-brand-black uppercase transition-colors hover:text-brand-red"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Center: wordmark */}
+        <div className="flex-none text-center px-4">
+          <Link to="/" className="group block">
+            <h1 className="font-display text-[20px] lg:text-4xl font-black tracking-tighter text-brand-black uppercase leading-none">
+              AmandaKelly<span className="text-brand-red">.</span>Co
+            </h1>
+            <div className="h-0.5 w-0 bg-brand-black mx-auto group-hover:w-full transition-all duration-500 ease-in-out" />
+          </Link>
+        </div>
+
+        {/* Right: nav links (desktop) + icons */}
+        <div className="flex-1 flex items-center justify-end gap-4">
+          <div className="hidden lg:flex items-center gap-4 mr-4">
+            {rightLinks.map((link) => (
+              <Link
+                key={link.label}
+                to={link.to}
+                className="font-display font-bold text-sm tracking-widest text-brand-black uppercase transition-colors hover:text-brand-red"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <div className="flex items-center gap-4 lg:gap-6 lg:border-l border-gray-300 lg:pl-4">
+            <button aria-label="Search" className="flex items-center justify-center p-1 text-brand-black hover:text-brand-red transition-colors">
+              <span className="material-symbols-outlined text-2xl">search</span>
+            </button>
+            <button aria-label="Account" className="hidden lg:flex items-center justify-center p-1 text-brand-black hover:text-brand-red transition-colors">
+              <span className="material-symbols-outlined text-2xl">person</span>
+            </button>
+            <button aria-label="Shopping Bag" className="relative flex items-center justify-center p-1 text-brand-black hover:text-brand-red transition-colors">
+              <span className="material-symbols-outlined text-2xl">shopping_bag</span>
+              <span className="absolute -top-1 -right-1 bg-brand-red text-brand-white text-[10px] font-bold w-4 h-4 flex items-center justify-center">0</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile menu panel */}
+      {menuOpen && (
+        <div className="lg:hidden border-t border-brand-black bg-brand-surface px-5 py-4 flex flex-col gap-4">
+          {[...leftLinks, ...rightLinks].map((link) => (
             <Link
-              key={link.to}
+              key={link.label}
               to={link.to}
-              className={`font-display font-bold uppercase tracking-widest text-xs md:text-sm transition-colors hover:text-brand-red ${
-                location.pathname === link.to ? 'text-brand-red' : 'text-brand-white'
-              }`}
+              onClick={() => setMenuOpen(false)}
+              className="font-display font-bold text-sm tracking-widest text-brand-black uppercase transition-colors hover:text-brand-red"
             >
               {link.label}
             </Link>
           ))}
-        </nav>
-      </div>
+        </div>
+      )}
     </header>
   );
 }
