@@ -28,11 +28,11 @@ const testimonials = [
 ];
 
 const faqs = [
-  'Is AmandaKelly really 100% virgin hair?',
-  'What textures do you carry?',
-  'Can I dye, bleach, and heat style AmandaKelly hair?',
-  'Do you offer wholesale and custom orders?',
-  'How do I pick the right texture and length?',
+  ['Is AmandaKelly really 100% virgin hair?', 'Yes. Every bundle, closure, and frontal is 100% virgin hair, sourced raw and unprocessed. That means one donor, one cuticle direction, and no chemical stripping before it reaches you. Burn test and true weight verification hold up on every order.'],
+  ['What textures do you carry?', 'Six textures. Burmese curly, Cambodian wavy, straight, deep wave, Indian curly, and body wave. Every texture available in bundle form and matched by 4x4 HD closures and 13x4 HD frontals in the same virgin standard.'],
+  ['Can I dye, bleach, and heat style AmandaKelly hair?', 'Yes. Because the hair is raw virgin and unprocessed, it takes color, bleach, and heat the way natural hair does. Follow the same care rules you would with your own hair, and the install holds through the routine.'],
+  ['Do you offer wholesale and custom orders?', 'Yes. We work with stylists, boutiques, and private-label builds on the same virgin standard that runs the retail line. Terms are set on a per-account basis. Contact us to open the conversation.'],
+  ['How do I pick the right texture and length?', 'Start with the Hair Guide. Every texture is explained side by side, with length recommendations for common install goals. When in doubt, message us before you order.'],
 ];
 
 export default function Home() {
@@ -115,7 +115,6 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1 flex justify-center">
             <div className="relative p-8 border-2 border-brand-black w-full max-w-md">
-              <div className="absolute -top-4 -left-4 w-12 h-12 bg-brand-red" />
               <div className="w-full aspect-[4/5] bg-gray-200" />
             </div>
           </div>
@@ -157,12 +156,15 @@ export default function Home() {
 
       <section className="bg-brand-surface border-t-2 border-brand-black px-5 md:px-16 py-12 md:py-20">
         <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-8 max-w-4xl mx-auto">Common Questions</h2>
-        <div className="max-w-4xl mx-auto flex flex-col">
-          {faqs.map((q) => (
-            <div key={q} className="flex justify-between items-center border-b-2 border-brand-black py-4">
-              <span className="font-display font-bold uppercase text-sm md:text-lg">{q}</span>
-              <span className="text-xl font-bold">+</span>
-            </div>
+        <div className="max-w-4xl mx-auto flex flex-col divide-y-2 divide-brand-black border-y-2 border-brand-black">
+          {faqs.map(([q, a]) => (
+            <details key={q} className="group py-4">
+              <summary className="flex justify-between items-center gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span className="font-display font-bold uppercase text-sm md:text-lg">{q}</span>
+                <span className="text-xl font-bold shrink-0 transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <p className="pt-3 text-sm text-brand-on-surface-variant leading-relaxed">{a}</p>
+            </details>
           ))}
         </div>
       </section>
