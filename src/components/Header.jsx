@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const leftLinks = [
   { to: '/', label: 'Home' },
+  { to: '/about', label: 'About' },
   { to: '/hair-guide', label: 'Hair Guide' },
 ];
 

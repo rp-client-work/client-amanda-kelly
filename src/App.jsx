@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import HairGuide from './pages/HairGuide';
 import Contact from './pages/Contact';
+import About from './pages/About';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/hair-guide" element={<HairGuide />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
