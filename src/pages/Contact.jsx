@@ -11,12 +11,10 @@ export default function Contact() {
   return (
     <>
       <section className="bg-brand-black text-brand-white px-5 md:px-16 py-14 md:py-20">
-        <span className="font-display font-bold uppercase tracking-widest text-xs">Contact</span>
-        <h1 className="text-4xl md:text-6xl font-extrabold uppercase tracking-tight mt-2 mb-6">
+        <h1 className="text-4xl md:text-6xl font-extrabold uppercase tracking-tight mb-6">
           Contact AmandaKelly<br />Get in Touch.
         </h1>
-        <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8 max-w-4xl">
-          <div className="hidden md:block w-12 h-0.5 bg-brand-white mt-3" />
+        <div className="max-w-4xl">
           <p className="leading-relaxed">
             The AmandaKelly haircare team reads every message and routes it to the right desk. Choose retail support for orders and product questions, wholesale for salon and retail partnerships, or stylist terms for licensed pros. Every inquiry gets a real reply within 2 business days.
           </p>
