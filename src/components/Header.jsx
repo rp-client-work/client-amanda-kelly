@@ -46,7 +46,7 @@ export default function Header() {
         <div className="flex-none text-center px-4">
           <Link to="/" className="group block">
             <h1 className="font-display text-[20px] lg:text-4xl font-black tracking-tighter text-brand-black uppercase leading-none">
-              AmandaKelly<span className="text-brand-red">.</span>Co
+              AmandaKelly.Co<span className="text-brand-red">.</span>
             </h1>
             <div className="h-0.5 w-0 bg-brand-black mx-auto group-hover:w-full transition-all duration-500 ease-in-out" />
           </Link>
