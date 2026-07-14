@@ -42,9 +42,22 @@ export default function Contact() {
               Not sure which desk? Send a message here and we'll route it. Real people, real replies, within 2 business days.
             </p>
             <div className="pt-6 border-t border-gray-300 flex flex-col gap-4">
-              <a href="https://instagram.com/amandakellycompany_" className="font-display font-bold uppercase text-xs tracking-widest hover:text-brand-red transition-colors">
-                Prefer social? Follow along at @amandakellycompany_
-              </a>
+              <div className="flex items-center gap-3">
+                <span className="font-display font-bold uppercase text-xs tracking-widest">
+                  Prefer social? Follow along
+                </span>
+                <a
+                  href="https://instagram.com/amandakellycompany_"
+                  aria-label="Instagram"
+                  className="flex items-center justify-center w-8 h-8 rounded-full bg-brand-red hover:bg-brand-black transition-colors shrink-0"
+                >
+                  <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-brand-white" strokeWidth="2">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                </a>
+              </div>
               <div className="bg-gray-200/40 p-4">
                 <p className="font-display font-bold uppercase text-[11px] tracking-wide text-brand-on-surface-variant mb-2">
                   Response times: within 2 business days on all inquiries.
