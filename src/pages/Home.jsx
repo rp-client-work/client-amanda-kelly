@@ -40,10 +40,6 @@ const faqs = [
 export default function Home() {
   return (
     <>
-      <div className="bg-brand-red text-brand-white text-center text-xs md:text-sm font-display font-bold uppercase tracking-widest py-2.5 px-3">
-        Baltimore-based. Local pickup available.
-      </div>
-
       <section className="bg-brand-black text-brand-white flex flex-col items-center text-center gap-6 px-5 md:px-16 py-14 md:py-24">
         <h1 className="text-3xl md:text-6xl font-extrabold uppercase leading-tight tracking-tight max-w-4xl">
           Six Virgin Hair Textures.<br />Picked to Our Standard.
