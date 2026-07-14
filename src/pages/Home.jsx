@@ -1,7 +1,20 @@
 import Button from '../components/Button';
 import TestimonialCard from '../components/TestimonialCard';
+import burmeseCurlyImg from '../assets/textures/burmese-curly.jpg';
+import cambodianWavyImg from '../assets/textures/cambodian-wavy.jpg';
+import straightImg from '../assets/textures/straight.jpg';
+import deepWaveImg from '../assets/textures/deep-wave.jpg';
+import indianCurlyImg from '../assets/textures/indian-curly.jpg';
+import bodyWaveImg from '../assets/textures/body-wave.jpg';
 
-const textures = ['Burmese Curly', 'Cambodian Wavy', 'Straight', 'Deep Wave', 'Indian Curly', 'Body Wave'];
+const textures = [
+  ['Burmese Curly', burmeseCurlyImg],
+  ['Cambodian Wavy', cambodianWavyImg],
+  ['Straight', straightImg],
+  ['Deep Wave', deepWaveImg],
+  ['Indian Curly', indianCurlyImg],
+  ['Body Wave', bodyWaveImg],
+];
 
 const signatureTextures = [
   ['4x4 HD Transparent Lace Closures', 'Middle-part closures on 4x4 HD transparent lace. Sized for standard sew-in and wig installs. Texture-matched to every bundle order.'],
@@ -54,9 +67,11 @@ export default function Home() {
           Each texture is ethically sourced and maintained in its most natural, raw state to ensure longevity and seamless blending. Available in every length from 14 to 32 inch.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 border-l-2 border-t-2 border-brand-black">
-          {textures.map((name) => (
+          {textures.map(([name, img]) => (
             <div key={name} className="border-r-2 border-b-2 border-brand-black">
-              <div className="aspect-square bg-gray-200" />
+              <div className="aspect-[1/2] overflow-hidden pointer-events-none">
+                <img src={img} alt={name} className="w-full h-full object-cover" draggable="false" />
+              </div>
               <div className="p-3">
                 <span className="font-display font-bold uppercase text-xs tracking-widest">{name}</span>
               </div>
