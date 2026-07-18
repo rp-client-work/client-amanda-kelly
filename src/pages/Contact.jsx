@@ -39,7 +39,7 @@ export default function Contact() {
             <p className="text-brand-on-surface-variant mb-6">
               Not sure which desk? Send a message here and we'll route it. Real people, real replies, within 2 business days.
             </p>
-            <div className="pt-6 border-t border-gray-300 flex flex-col gap-4">
+            <div className="pt-6 flex flex-col gap-4">
               <div className="flex items-center gap-3">
                 <span className="font-display font-bold uppercase text-xs tracking-widest">
                   Prefer social? Follow along
