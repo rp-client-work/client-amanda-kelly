@@ -36,10 +36,10 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-start">
           <div className="lg:col-span-4">
             <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-3">Direct Inquiry</h2>
-            <p className="text-brand-on-surface-variant mb-6">
+            <p className="text-brand-on-surface-variant mb-3">
               Not sure which desk? Send a message here and we'll route it. Real people, real replies, within 2 business days.
             </p>
-            <div className="pt-6 flex flex-col gap-4">
+            <div className="pt-2 flex flex-col gap-4">
               <div className="flex items-center gap-3">
                 <span className="font-display font-bold uppercase text-xs tracking-widest">
                   Prefer social? Follow along
