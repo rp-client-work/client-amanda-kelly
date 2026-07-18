@@ -56,14 +56,6 @@ export default function Contact() {
                   </svg>
                 </a>
               </div>
-              <div className="bg-gray-200/40 p-4">
-                <p className="font-display font-bold uppercase text-[11px] tracking-wide text-brand-on-surface-variant mb-2">
-                  Response times: within 2 business days on all inquiries.
-                </p>
-                <p className="font-display font-bold uppercase text-[11px] tracking-wide">
-                  Business hours: <span className="bg-brand-red/10 text-brand-red px-1">[PLACEHOLDER: AMANDA TO EDIT BEFORE LAUNCH...]</span>
-                </p>
-              </div>
             </div>
           </div>
           <form className="lg:col-span-8 flex flex-col gap-6 md:gap-8 p-6 md:p-12 bg-brand-surface border-2 border-brand-black">
