@@ -9,7 +9,7 @@ Takes a client brief and produces finished, conversion-optimized, SEO/AEO/GEO/AI
 ## Where things live
 
 - **`.claude/skills/copy-department/SKILL.md`** — the orchestrator. All pipeline logic, rules, QA-failure routing, and cost discipline live here. This is the authoritative spec; read it first when working on the system itself.
-- **`.claude/agents/*.md`** — the seven named subagents (see below). Each is a standalone specialist with its own scoped tools and instructions.
+- **`.claude/agents/*.md`** — the eight named subagents (see below). Each is a standalone specialist with its own scoped tools and instructions.
 - **`.claude/skills/copy-department/reference/`** — shared reference docs (`schema-stack.md`, `ai-search-tactics.md`) the subagents load on demand, plus per-client project context files for resuming a specific client job in a new chat.
 
 ## The team
@@ -21,14 +21,17 @@ Takes a client brief and produces finished, conversion-optimized, SEO/AEO/GEO/AI
 | Jasmin | Strategy & Structure | `.claude/agents/jasmin.md` |
 | Nadia | Offer & Psychology | `.claude/agents/nadia.md` |
 | Dulce | Visual/UX Layout Brief | `.claude/agents/dulce.md` |
-| Raegan | Copy Drafting | `.claude/agents/raegan.md` |
+| Raegan | Copy Drafting (pure human persuasion, no technical SEO) | `.claude/agents/raegan.md` |
+| Charli | Google & Multi-Surface Compliance Engine | `.claude/agents/charli.md` |
 | Vera | Compliance QA | `.claude/agents/vera.md` |
 
 ## How a job runs
 
 **Foundation phase (once per job, covers every page):** Intake (orchestrator itself) → Mina (full-site architecture, self-audits) → Loren (research, once for the whole brand) → Jasmin (strategy/positioning/outlines for all pages, self-audits) → Nadia (offer structure + psychology brief for all pages) → Dulce (visual/UX layout brief for all pages).
 
-**Per-page phase (repeats per page or small batch):** Raegan (drafts the page) → Vera (QA gate) → loop back to whichever specialist owns a finding until it passes or hits the retry cap → deliver.
+**Per-page phase (repeats per page or small batch):** Raegan (drafts pure persuasion copy) → deterministic pre-lint → Charli (audits live Google Search Central documentation, injects keyword/entity/AEO/AIO structure, overwrites the draft) → deterministic pre-lint → Vera (final QA gate, fixes everything herself, in place) → deliver.
+
+Raegan is deliberately freed from technical SEO, keyword balancing, and algorithmic layout engineering; that work is Charli's alone, so drafting can focus entirely on brand voice and persuasion, and compliance optimization can focus entirely on search-surface mechanics without competing priorities inside a single dispatch.
 
 This two-phase split exists specifically to avoid re-paying for brand-level research and strategy on every single page — see "Design history" below for why.
 
@@ -59,6 +62,6 @@ This system went through real iteration and testing before being trusted for pro
 
 ## Extending this system
 
-- New subagent: add a `.claude/agents/<name>.md` with a real first name, YAML frontmatter (`name`, `description`, `tools`), and instructions written at the same concrete-rules-plus-checklist level of detail as the existing seven, not vague "you are an expert at X" framing.
+- New subagent: add a `.claude/agents/<name>.md` with a real first name, YAML frontmatter (`name`, `description`, `tools`), and instructions written at the same concrete-rules-plus-checklist level of detail as the existing eight, not vague "you are an expert at X" framing.
 - New client project: copy `.claude/skills/copy-department/reference/CLIENT-CONTEXT-TEMPLATE.md` to `<client>-context.md` in that same folder and fill it in as the job progresses, capturing business facts, hard guardrails with the mistakes that made them necessary, open questions, delivery status, and resume notes.
 - Changing pipeline behavior: edit `SKILL.md` directly, it's the single source of truth the orchestrator actually reads.
