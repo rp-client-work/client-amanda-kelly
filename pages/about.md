@@ -29,7 +29,7 @@ That meant deciding, early, that order size would never change the standard. A s
 ### WHAT WE STAND FOR
 
 - **100% virgin, raw, unprocessed hair.** No prior chemical processing, no prior dye, cuticle intact on arrival.
-- **Cuticle aligned in one direction.** Every strand runs root to tip the way it grew, not reversed or mixed to disguise processed hair.
+- **Cuticle aligned in one direction.** Every strand runs root to tip the way it grew, not reversed or mixed, so it behaves consistently from strand to strand.
 - **Single-donor per bundle.** One donor's hair, not a blend, kept as a finite sourcing attribute rather than a mass-manufactured claim.
 - **Hand-picked, not bulk-sorted.** Bundles are selected individually against that standard.
 - **Hand-tied construction.** Closures and frontals are built by hand to match the bundle standard, not machine-assembled separately from it.
@@ -100,7 +100,7 @@ All six textures, Burmese Curly, Cambodian Wavy, Straight, Deep Wave, Indian Cur
 Our answer is our own process: single-donor sourcing, cuticle intact and aligned in one direction, and hand-tied, hand-picked construction, applied the same way across every texture and every way to buy. That is the full basis of the standard, not a comparison to any other brand.
 
 **Q: Does this construction affect how long the hair holds up over time?**
-Because the hair starts virgin and cuticle-intact, and is built by hand rather than machine-bulk-assembled, it tends to hold its condition through repeated installs and color services better than hair that starts already processed. This is a natural outcome of the sourcing and construction choices described above, not a separate claim.
+Because the hair starts virgin and cuticle-intact, and is built by hand rather than machine-bulk-assembled, it tends to hold its condition well through repeated installs and color services over time. This is a natural outcome of the sourcing and construction choices described above, not a separate claim.
 
 **Q: Is there a minimum for wholesale orders?**
 Yes. Wholesale case orders carry a stated minimum, presented as a term of the supply relationship. Contact us for current minimums and to request samples.

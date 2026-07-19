@@ -48,7 +48,7 @@ Every texture below is sourced and built to the same standard named above. Nothi
 
 | Texture | Length Range | Character |
 |---|---|---|
-| Burmese Curly | 14"-32" | Tight, defined curl pattern, holds its shape install to install |
+| Burmese Curly | 14"-32" | Tight, clearly defined curl pattern |
 | Cambodian Wavy | 14"-32" | Loose, natural wave, moves as one unit with itself |
 | Straight | 14"-32" | Sleek, uniform strand, no texture variance bundle to bundle |
 | Deep Wave | 14"-32" | Pronounced S-pattern wave, full-bodied from root to tip |
@@ -63,7 +63,7 @@ Every texture below is sourced and built to the same standard named above. Nothi
 
 ### HAND-TIED. CUTICLE-ALIGNED. NAMED FOR WHAT IT IS.
 
-Hand-tied construction means each weft is built by hand, strand by strand, rather than machine-assembled in bulk. Cuticle-aligned means every strand runs root to tip in the same direction it grew, not mixed or reversed to disguise processed hair.
+Hand-tied construction means each weft is built by hand, strand by strand, rather than machine-assembled in bulk. Cuticle-aligned means every strand runs root to tip in the same direction it grew, not mixed or reversed, so it behaves consistently from the first install to the last.
 
 We name our textures for what they are, not for what sounds better on a label. Burmese Curly is Burmese Curly. Straight is straight. There is no renaming a texture to make it sound more premium than it is.
 
@@ -139,7 +139,7 @@ The cuticle is the outer layer of each strand. Leaving it intact and aligned roo
 AmandaKelly Co.'s standard is single-donor sourcing, cuticle intact and aligned in one direction, and hand-tied, hand-picked construction, applied identically across all six textures and all three ways to buy: retail, stylist, and wholesale. That is the whole answer: our own process, named plainly, applied the same way every time.
 
 **Q: Does color processing or repeated installs damage the hair faster?**
-Because the hair starts virgin and cuticle-intact rather than pre-processed, it holds up to coloring, bleaching, and repeated install cycles better than hair that arrives already stripped or chemically altered. This is a quiet outcome of the sourcing and construction standard, not a separate promise.
+Because the hair starts virgin and cuticle-intact, it holds up well to coloring, bleaching, and repeated install cycles over time. This is a quiet outcome of the sourcing and construction standard, not a separate promise.
 
 **Q: Can I color or bleach AmandaKelly Co. hair?**
 Yes. Because the hair is virgin and unprocessed to begin with, it can be lifted, toned, or dyed by a professional stylist the same way natural hair can.
