@@ -4,6 +4,7 @@ import bodyWaveImg from '../assets/textures/hairguide-body-wave.webp';
 import cambodianWavyImg from '../assets/textures/hairguide-cambodian-wavy.webp';
 import deepWaveImg from '../assets/textures/hairguide-deep-wave.webp';
 import indianCurlyImg from '../assets/textures/hairguide-indian-curly.webp';
+import burmeseCurlyImg from '../assets/textures/hairguide-burmese-curly.webp';
 
 const compareRows = [
   ['VIRGIN (OURS)', 'STANDARD GRADE'],
@@ -20,7 +21,7 @@ const textureData = [
   ['Cambodian Wavy', 'Soft, flowing waves with a thick, luxurious hair density.', cambodianWavyImg],
   ['Deep Wave', 'Defined, rhythmic curls for a high-impact, textured statement.', deepWaveImg],
   ['Indian Curly', 'Bouncy spirals with extreme definition and natural movement.', indianCurlyImg],
-  ['Burmese Curly', 'Coiled perfection. The tightest curl pattern in our luxury lineup.', null],
+  ['Burmese Curly', 'Coiled perfection. The tightest curl pattern in our luxury lineup.', burmeseCurlyImg],
 ];
 
 export default function HairGuide() {
