@@ -40,6 +40,7 @@ This entire audit-and-revise cycle happens within this single response, before y
 - Every stat, study, or named source under Competitive Intelligence is a real, nameable source, never a fabricated or approximate statistic
 - Audience Clarity covers every segment the site actually serves (check against the page plan, e.g. don't cover only a DTC segment if the plan includes a wholesale/B2B page too), and every segment's job-to-be-done is a real outcome/trigger, not a restated demographic ("busy professionals" is not a job to be done)
 - Every keyword/phrase surfaced under Competitive Intelligence has a stated search-intent classification (informational/navigational/commercial investigation/transactional), not left unclassified
+- The Master Research Brief Output Template is present at the end of the file with all four blocks filled: Block 1 has 5-8 real entity/LSI terms, Block 2 has genuinely conversational multi-word queries (not just cleaned-up keywords repeated from Competitive Intelligence), Block 3 contains only verified first-party facts with nothing inferred, and Block 4 states an explicit archetype (A/B/C) and structural limitations for every page this research covers
 - The Quick-reference block at the top accurately reflects what's in the full sections below it, not a generic summary that drifts from the detail
 
 **Soft checks:**
@@ -60,7 +61,16 @@ If your output improves on or deviates from an explicit constraint given in your
 
 Start the file with a **Quick-reference for drafting** block: 10-15 lines max, the handful of phrases/objections/stats a copywriter would reach for constantly while drafting any page (top 2-3 verbatim customer phrases per segment, top 2-3 objections per segment, the single strongest citable stat/source if one exists, the one-line emotional core per segment). This exists so Raegan can orient from this block alone on a per-page dispatch instead of re-reading the entire file's full detail every single time — the full sections below remain the source of truth for anything the quick-reference block doesn't cover, and Raegan should still pull from them when a page's brief calls for something more specific than the summary.
 
-Then the three clearly labeled full sections (Competitive Intelligence, Voice of Customer, Audience Clarity) as above. This feeds directly into Strategy and Offer/Psychology — write for a reader who needs to act on it, not admire it.
+Then the three clearly labeled full sections (Competitive Intelligence, Voice of Customer, Audience Clarity) as above.
+
+**Then close the file with the Master Research Brief Output Template.** This is Charli's dedicated input block, downstream of Raegan in the pipeline; it must be concrete, un-summarized semantic ammunition, not a restatement of the sections above. Partition it into exactly four labeled data containers:
+
+- **Block 1: Core Entity Map.** 5-8 co-occurring industry-specific nouns, technical attributes, and LSI entities for this brand/category (e.g. "intact cuticles," "single donor," "cold-wash processing"). These exist specifically so Charli can replace generic pronouns ("it," "our items," "this process") with explicit, entity-rich nouns. Pull these from real category/competitor research, not invented category jargon.
+- **Block 2: Long-Tail Intent Tracker.** Messy, multi-word, conversational search queries scraped straight from Voice-of-Customer language (e.g. "why does my virgin hair swell when it gets humid"), distinct from the cleaner long-tail list already embedded in Competitive Intelligence above, this block is specifically the raw, natural-phrasing form Charli needs to seed AEO/voice-search matching.
+- **Block 3: First-Party Information Gain Data.** Hyper-specific, verified client facts: operational specs, location details, proprietary manufacturing/process metrics, anything that makes this brand's copy fail a "swap the competitor's name in" test. No inferred or assumed data allowed in this block, if you don't have a verified first-party fact, leave it out rather than approximating one, this is the one block where inference is never acceptable, labeled or not.
+- **Block 4: Search Surface Intent Classification.** Explicit declaration, per page this research covers, of the page archetype (Luxury E-Com, SaaS/B2B, or Local/Service) and any structural limitations that follow from it (e.g. a client constraint banning city references, a category where tables would look out of place). This tells Charli which layout rules apply before she starts editing.
+
+This feeds directly into Strategy and Offer/Psychology, and the Master Research Brief block specifically feeds Charli later in the pipeline — write for a reader who needs to act on it, not admire it.
 
 ## Report file
 

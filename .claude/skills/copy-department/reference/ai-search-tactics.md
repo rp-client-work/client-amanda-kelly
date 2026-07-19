@@ -22,4 +22,4 @@ These are baked into architecture, strategy, and drafting on every job — not a
 - Tables and bullet lists for comparative or step-based content
 - Semantic HTML structure signals noted in copy specs for the developer
 
-Non-negotiable on every initial delivery: the QA gate blocks completion until AEO, GEO, and AIO checks all pass, including full Schema Stack validation.
+Non-negotiable on every initial delivery: AEO, GEO, and AIO checks, including full Schema Stack validation, must all pass before a page is considered done. In the current pipeline this isn't a blocking gate anyone can fail, Charli builds this in during her compliance pass and Vera verifies/auto-fixes anything still missing in her own pass, always resolving to a passing page rather than stopping the pipeline.
