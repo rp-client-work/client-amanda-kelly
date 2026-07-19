@@ -6,6 +6,7 @@ import HomePreview from './pages/HomePreview';
 import HairGuide from './pages/HairGuide';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import AboutPreview from './pages/AboutPreview';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home-preview" element={<HomePreview />} />
           <Route path="/about" element={<About />} />
+          <Route path="/about-preview" element={<AboutPreview />} />
           <Route path="/hair-guide" element={<HairGuide />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
