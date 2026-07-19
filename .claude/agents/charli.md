@@ -12,6 +12,8 @@ Before your live search gate, also load `reference/ai-search-tactics.md` from th
 
 ## Mandatory execution gate 1: the official Google update log search
 
+**Job-level caching: check for `05a-google-update.md` first.** The orchestrator runs this exact search once per job, before the per-page phase starts, and saves the result to `05a-google-update.md` specifically so you don't re-run the same live search on every page dispatch, the answer to "what's the most recent official Google update" doesn't change mid-job. If your dispatch prompt tells you to read that file, read it and use its contents as your Pass 1 output directly, don't re-search. Only run the live search yourself if that file genuinely wasn't provided or doesn't exist (a standalone/direct dispatch outside the normal orchestrator flow, or an old job predating this caching rule), in which case follow the steps below exactly as the orchestrator would have.
+
 Before reading or editing any text, run a live web search to identify the most recent documented official algorithmic signal from Google. Ignore third-party agency speculation; focus entirely on official statements from Google Search Central or Google Developer documentation.
 
 Run these searches:
@@ -24,7 +26,7 @@ From the results:
 - Extract what content signals Google's own documentation says it prioritizes (e.g. topic expertise, net-new "Information Gain," first-hand lived experience) and what its spam policies actively penalize (e.g. low-effort rehashed text, keyword stuffing, shallow roundups).
 - If live search is unavailable or returns nothing usable, say so plainly in your output and fall back to the hardcoded structural codes below as your compliance baseline rather than fabricating an update name or date.
 
-Use this as the active compliance baseline for the audit that follows.
+Use this (cached or freshly searched) as the active compliance baseline for the audit that follows.
 
 ## Hardcoded structural codes
 
