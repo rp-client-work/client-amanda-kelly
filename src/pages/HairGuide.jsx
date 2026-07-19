@@ -1,10 +1,6 @@
 import Button from '../components/Button';
-import straightImg from '../assets/textures/texture-straight.webp';
-import bodyWaveImg from '../assets/textures/texture-body-wave.webp';
-import cambodianWavyImg from '../assets/textures/texture-cambodian-wavy.webp';
-import deepWaveImg from '../assets/textures/texture-deep-wave.webp';
-import indianCurlyImg from '../assets/textures/texture-indian-curly.webp';
-import burmeseCurlyImg from '../assets/textures/texture-burmese-curly.webp';
+import silkStraightImg from '../assets/textures/hairguide-silk-straight.webp';
+import cambodianWavyImg from '../assets/textures/hairguide-cambodian-wavy.webp';
 
 const compareRows = [
   ['VIRGIN (OURS)', 'STANDARD GRADE'],
@@ -16,12 +12,12 @@ const compareRows = [
 const steps = ['Select Texture', 'Pick Your Length', 'Quantity Matters'];
 
 const textureData = [
-  ['Silk Straight', "Unrivaled shine and precision. Perfect for sleek, architectural looks.", straightImg],
-  ['Body Wave', "Effortless volume with a natural 'S' pattern for timeless elegance.", bodyWaveImg],
+  ['Silk Straight', "Unrivaled shine and precision. Perfect for sleek, architectural looks.", silkStraightImg],
+  ['Body Wave', "Effortless volume with a natural 'S' pattern for timeless elegance.", null],
   ['Cambodian Wavy', 'Soft, flowing waves with a thick, luxurious hair density.', cambodianWavyImg],
-  ['Deep Wave', 'Defined, rhythmic curls for a high-impact, textured statement.', deepWaveImg],
-  ['Indian Curly', 'Bouncy spirals with extreme definition and natural movement.', indianCurlyImg],
-  ['Burmese Curly', 'Coiled perfection. The tightest curl pattern in our luxury lineup.', burmeseCurlyImg],
+  ['Deep Wave', 'Defined, rhythmic curls for a high-impact, textured statement.', null],
+  ['Indian Curly', 'Bouncy spirals with extreme definition and natural movement.', null],
+  ['Burmese Curly', 'Coiled perfection. The tightest curl pattern in our luxury lineup.', null],
 ];
 
 export default function HairGuide() {
@@ -71,7 +67,11 @@ export default function HairGuide() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {textureData.map(([name, desc, img]) => (
             <div key={name} className="border border-brand-black">
-              <img src={img} alt={name} className="aspect-square w-full object-cover" />
+              {img ? (
+                <img src={img} alt={name} className="aspect-square w-full object-cover" />
+              ) : (
+                <div className="aspect-square bg-gray-200" />
+              )}
               <div className="p-4">
                 <h4 className="font-display font-bold uppercase text-base mb-1">{name}</h4>
                 <p className="text-sm text-brand-on-surface-variant">{desc}</p>
