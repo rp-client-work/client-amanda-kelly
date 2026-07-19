@@ -2,6 +2,7 @@ import Button from '../components/Button';
 import silkStraightImg from '../assets/textures/hairguide-silk-straight.webp';
 import bodyWaveImg from '../assets/textures/hairguide-body-wave.webp';
 import cambodianWavyImg from '../assets/textures/hairguide-cambodian-wavy.webp';
+import deepWaveImg from '../assets/textures/hairguide-deep-wave.webp';
 
 const compareRows = [
   ['VIRGIN (OURS)', 'STANDARD GRADE'],
@@ -16,7 +17,7 @@ const textureData = [
   ['Silk Straight', "Unrivaled shine and precision. Perfect for sleek, architectural looks.", silkStraightImg],
   ['Body Wave', "Effortless volume with a natural 'S' pattern for timeless elegance.", bodyWaveImg],
   ['Cambodian Wavy', 'Soft, flowing waves with a thick, luxurious hair density.', cambodianWavyImg],
-  ['Deep Wave', 'Defined, rhythmic curls for a high-impact, textured statement.', null],
+  ['Deep Wave', 'Defined, rhythmic curls for a high-impact, textured statement.', deepWaveImg],
   ['Indian Curly', 'Bouncy spirals with extreme definition and natural movement.', null],
   ['Burmese Curly', 'Coiled perfection. The tightest curl pattern in our luxury lineup.', null],
 ];
