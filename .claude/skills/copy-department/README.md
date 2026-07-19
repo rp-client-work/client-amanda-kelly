@@ -16,10 +16,10 @@ Takes a client brief and produces finished, conversion-optimized, SEO/AEO/GEO/AI
 
 | Name | Role | File |
 |---|---|---|
-| Mina | Site Architecture | `.claude/agents/mina.md` |
 | Loren | Research & Audience | `.claude/agents/loren.md` |
-| Jasmin | Strategy & Structure | `.claude/agents/jasmin.md` |
+| Mina | Site Architecture | `.claude/agents/mina.md` |
 | Nadia | Offer & Psychology | `.claude/agents/nadia.md` |
+| Jasmin | Strategy & Structure | `.claude/agents/jasmin.md` |
 | Dulce | Visual/UX Layout Brief | `.claude/agents/dulce.md` |
 | Raegan | Copy Drafting (pure human persuasion, no technical SEO) | `.claude/agents/raegan.md` |
 | Charli | Google & Multi-Surface Compliance Engine | `.claude/agents/charli.md` |
@@ -27,7 +27,7 @@ Takes a client brief and produces finished, conversion-optimized, SEO/AEO/GEO/AI
 
 ## How a job runs
 
-**Foundation phase (once per job, covers every page):** Intake (orchestrator itself) → Mina (full-site architecture, self-audits) → Loren (research, once for the whole brand) → Jasmin (strategy/positioning/outlines for all pages, self-audits) → Nadia (offer structure + psychology brief for all pages) → Dulce (visual/UX layout brief for all pages).
+**Foundation phase (once per job, covers every page):** Intake (orchestrator itself) → Loren (research, once for the whole brand) → Mina (full-site architecture, self-audits) → Nadia (offer structure + psychology brief for all pages, locking the offer and persuasion beats before structure is built) → Jasmin (strategy/positioning/outlines for all pages, self-audits, built to deliver Nadia's beats as headers) → Dulce (visual/UX layout brief for all pages).
 
 **Per-page phase (repeats per page or small batch):** Raegan (drafts pure persuasion copy) → deterministic pre-lint → Charli (audits live Google Search Central documentation, injects keyword/entity/AEO/AIO structure, overwrites the draft) → deterministic pre-lint → Vera (final QA gate, fixes everything herself, in place) → deliver.
 
