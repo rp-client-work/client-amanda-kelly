@@ -106,5 +106,11 @@ Overwrite `pages/<page-slug>-draft.md` in place with your Pass 3 output (full pa
 
 After you finish, write a short companion report to `pages/<page-slug>-charli-report.md`. Bullet points, a few dozen lines at most:
 - **Read:** the exact file(s) you used as input, including whether live Google search data was available.
+- **Google update log:** carry Pass 1 forward into this file verbatim (the identified update, archetype, page intent), not just a note that the search happened, this is the only durable record of what search-gate data you actually used. If a session resumes later or context gets compacted, this is what tells the next reader what compliance baseline this page was built against.
+- **Gap assessment:** carry Pass 2 forward into this file verbatim as well, same reasoning, don't let it exist only in your ephemeral response to the orchestrator.
 - **Self-audit:** pass/fail against your own checklist, how many internal passes, anything shipped best-effort.
 - **Gaps:** any compliance requirement you couldn't satisfy for lack of real data (a missing fact, an archetype ambiguity), stated plainly rather than papered over.
+
+## If the live search gate fails
+
+If both search attempts in Mandatory execution gate 1 come back empty, error, or rate-limited, don't retry indefinitely or block. Note the failure plainly in Pass 1 and in your report ("live Google Search Central lookup unavailable this run, reason: [error/empty/rate-limited]"), then proceed using the hardcoded structural codes below as your compliance baseline, same as the explicit fallback already described in that section. A stale-but-present compliance pass beats no compliance pass.
