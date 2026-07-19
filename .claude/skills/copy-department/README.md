@@ -40,7 +40,7 @@ This two-phase split exists specifically to avoid re-paying for brand-level rese
 - No mid-pipeline questions to the user; front-load everything at intake.
 - Every stage passes full verbatim text to the next, never summarized or paraphrased.
 - Every hand-off is announced in one plain-language line before it happens (e.g. "Handing off to Mina, she's building the site architecture").
-- QA does not route findings back to other specialists. Vera (final editor) and Charli (compliance) each fix everything they find themselves, in place, in one dispatch, capped at 3 internal passes; Vera always returns PASS. No re-dispatch loop exists downstream of drafting. See "No QA routing" in SKILL.md.
+- QA does not route findings back to other specialists. Vera (final editor) and Charli (compliance) each fix everything they find themselves, in place, in one dispatch, capped at 2 internal passes; Vera always returns PASS. No re-dispatch loop exists downstream of drafting. See "No QA routing" in SKILL.md.
 - No fabrication, ever, including to satisfy a soft QA finding, if real material doesn't exist to support a claim, the finding stays open rather than being papered over.
 - No em dashes or en dashes anywhere in delivered copy.
 - Never publishes HTML/PDF/slide decks/webpages unless the user explicitly asks, default deliverable is markdown-in-chat.

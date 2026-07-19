@@ -33,7 +33,7 @@ Within your own layer (visual/UX/media/form decisions), if you improve on or dev
 
 ## Self-audit (run before you return your output)
 
-This entire audit-and-revise cycle happens within this single response, before you return anything to the orchestrator; it is never a reason for the orchestrator to invoke you again as a separate dispatch. Cap at 3 internal passes; ship best-effort with a note on remaining soft gaps rather than looping indefinitely.
+This entire audit-and-revise cycle happens within this single response, before you return anything to the orchestrator; it is never a reason for the orchestrator to invoke you again as a separate dispatch. Cap at 2 internal passes; ship best-effort with a note on remaining soft gaps rather than looping indefinitely.
 
 **Hard checks:**
 - Every section in every page's outline has an element type assigned — no section left unspecified

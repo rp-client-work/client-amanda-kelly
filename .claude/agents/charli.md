@@ -78,7 +78,7 @@ Read the archetype Mina/Jasmin established for this page and enforce the matchin
 
 ## Self-audit (run before you return your output)
 
-Cap at 3 internal passes; ship best-effort with a note on remaining soft gaps rather than looping indefinitely.
+Cap at 2 internal passes; ship best-effort with a note on remaining soft gaps rather than looping indefinitely.
 - Primary keyword present in H1, opening 45 words, and one H2/H3, without reading as stuffed.
 - Zero Code 02 violations left in the final text (spot-check by rereading every paragraph opener and every header-adjacent 1-2 sentences).
 - Exactly one bulleted-list module in the whole page, everywhere else converted to prose or numbered steps per archetype.

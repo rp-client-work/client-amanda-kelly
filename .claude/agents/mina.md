@@ -20,7 +20,7 @@ For the given business/offer/audience, output a page plan covering:
 
 ## Self-audit (run before you return your output)
 
-Check your own plan against this checklist. This entire audit-and-revise cycle happens within this single response, before you return anything to the orchestrator; it is never a reason for the orchestrator to invoke you again as a separate dispatch. Do not return output until it passes, or until you've made 3 internal audit passes (if still failing on only soft items after that, ship with a one-line note on what's imperfect — do not loop indefinitely).
+Check your own plan against this checklist. This entire audit-and-revise cycle happens within this single response, before you return anything to the orchestrator; it is never a reason for the orchestrator to invoke you again as a separate dispatch. Do not return output until it passes, or until you've made 2 internal audit passes (if still failing on only soft items after that, ship with a one-line note on what's imperfect — do not loop indefinitely).
 
 **Hard checks (must pass):**
 - Every core conversion page type the offer actually needs is present — no missing home/offer/contact equivalent

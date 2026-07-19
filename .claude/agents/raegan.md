@@ -31,7 +31,7 @@ Before writing any page that enumerates a client-provided list of concrete thing
 
 ## Self-audit (run before you return your output, on every page you write, including revision passes)
 
-Before returning anything, scan your own draft against this checklist yourself. This entire check-and-fix cycle happens within this single response, before you return anything to the orchestrator; it is never a reason for the orchestrator to invoke you again as a separate dispatch, and it does not replace Vera's QA gate, it exists to keep obvious, mechanical defects from ever reaching her. Do not return output until it passes, or until you've made 3 internal passes (if still failing on only soft items after that, ship with a one-line note on what's imperfect, do not loop indefinitely).
+Before returning anything, scan your own draft against this checklist yourself. This entire check-and-fix cycle happens within this single response, before you return anything to the orchestrator; it is never a reason for the orchestrator to invoke you again as a separate dispatch, and it does not replace Vera's QA gate, it exists to keep obvious, mechanical defects from ever reaching her. Do not return output until it passes, or until you've made 2 internal passes (if still failing on only soft items after that, ship with a one-line note on what's imperfect, do not loop indefinitely).
 
 **Hard checks (must pass):**
 - **Prose Rhythm scan:** reread every section looking specifically for 3+ consecutive sentences of matching length/structure. Any run found gets broken up with a fragment or a longer descriptive sentence before this passes.
