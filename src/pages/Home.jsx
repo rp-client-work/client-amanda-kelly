@@ -9,32 +9,32 @@ import bodyWaveImg from '../assets/textures/texture-body-wave.webp';
 import closureImg from '../assets/products/closure-4x4-hd-lace.webp';
 import frontalImg from '../assets/products/frontal-13x4-hd-lace.webp';
 
+// Photography pending for these nine textures per intake notes. Textures with
+// a matching legacy asset use it as a placeholder; the rest render a plain
+// placeholder block until client photography lands. Do not reuse one origin's
+// photo for its sibling (e.g. Cambodian Straight vs. Brazilian Straight).
 const textures = [
-  ['Burmese Curly', burmeseCurlyImg],
-  ['Cambodian Wavy', cambodianWavyImg],
-  ['Straight', straightImg],
-  ['Deep Wave', deepWaveImg],
-  ['Indian Curly', indianCurlyImg],
-  ['Body Wave', bodyWaveImg],
+  ['Burmese Curly', burmeseCurlyImg, 'Loose bundle of Burmese Curly raw hair extensions, tight springy curl pattern visible.'],
+  ['Indian Wavy', indianCurlyImg, 'Loose bundle of Indian Wavy raw hair extensions, loose natural wave visible.'],
+  ['Cambodian Wavy', cambodianWavyImg, 'Loose bundle of Cambodian Wavy raw hair extensions, soft fine-to-medium wave visible.'],
+  ['Cambodian Straight', null, 'Loose bundle of Cambodian Straight raw hair extensions, sleek silky strand visible.'],
+  ['Cambodian Deep Wave', null, 'Loose bundle of Cambodian Deep Wave raw hair extensions, tight defined S-wave pattern visible.'],
+  ['Brazilian Wavy', null, 'Loose bundle of Brazilian Wavy raw hair extensions, fuller thicker wave visible.'],
+  ['Brazilian Straight', straightImg, 'Loose bundle of Brazilian Straight raw hair extensions, fuller straight strand with visible body.'],
+  ['Brazilian Deep Wave', deepWaveImg, 'Loose bundle of Brazilian Deep Wave raw hair extensions, looser fuller wave with visible volume.'],
+  ['Brazilian Deep Curly', bodyWaveImg, 'Loose bundle of Brazilian Deep Curly raw hair extensions, tight springy curl with real bounce.'],
 ];
 
-const signatureTextures = [
-  ['4x4 HD Transparent Lace Closures', 'Middle-part closures on 4x4 HD transparent lace. Sized for standard sew-in and wig installs. Texture-matched to every bundle order.', closureImg],
-  ['13x4 HD Transparent Lace Frontals', 'Ear-to-ear frontals on 13x4 HD transparent lace. Available in 16 to 18 inch. Sized for full parting flexibility and natural hairline recreation.', frontalImg],
+const buildBlocks = [
+  ['The Cuticle Stays Intact', "Raw hair, by definition, keeps its cuticle layer. Nothing about it gets stripped or acid-washed to fake a smoothness it doesn't have naturally."],
+  ["It's Aligned Root-to-Tip, Never Stripped or Reversed", "Every strand runs the direction it grew in. Root to tip. That's what raw hair is supposed to look like, and it's a big part of why it doesn't mat or tangle at the base after a few washes."],
+  ['Every Weft Is Hand-Tied, Strand by Strand', "Raw hair wefts are built by hand, one strand at a time. Slower to make. It lies flatter against the scalp and holds an install longer than a machine-sewn weft does."],
 ];
 
 const testimonials = [
-  ['"The consistency is what keeps me coming back. As a stylist, I need to know the hair will behave the same every single time. AmandaKelly Co. never fails."', 'VERIFIED STYLIST'],
-  ['"Bought 3 bundles of the Burmese Curly for my wedding and it was stunning. Minimal shedding and it held the coils all through the honeymoon."', 'RETAIL BUYER'],
-  ['"Wholesale cases arrive organized and the quality is identical to my initial sample order. Highly recommend for any salon owner."', 'WHOLESALE ACCOUNT'],
-];
-
-const faqs = [
-  ['Is AmandaKelly really 100% virgin hair?', 'Yes. Every bundle, closure, and frontal is 100% virgin hair, sourced raw and unprocessed. That means one donor, one cuticle direction, and no chemical stripping before it reaches you. Burn test and true weight verification hold up on every order.'],
-  ['What textures do you carry?', 'Six textures. Burmese curly, Cambodian wavy, straight, deep wave, Indian curly, and body wave. Every texture available in bundle form and matched by 4x4 HD closures and 13x4 HD frontals in the same virgin standard.'],
-  ['Can I dye, bleach, and heat style AmandaKelly hair?', 'Yes. Because the hair is raw virgin and unprocessed, it takes color, bleach, and heat the way natural hair does. Follow the same care rules you would with your own hair, and the install holds through the routine.'],
-  ['Do you offer wholesale and custom orders?', 'Yes. We work with stylists, boutiques, and private-label builds on the same virgin standard that runs the retail line. Terms are set on a per-account basis. Contact us to open the conversation.'],
-  ['How do I pick the right texture and length?', 'Start with the Hair Guide. Every texture is explained side by side, with length recommendations for common install goals. When in doubt, message us before you order.'],
+  ['"Reorders match the first install every time. That consistency is the whole point for me."', 'VERIFIED STYLIST'],
+  ['"Ordered Burmese Curly bundles for a wedding. Minimal shedding, installed clean."', 'RETAIL BUYER'],
+  ['"Case orders match the sample quality. That\'s what we needed to stock with confidence."', 'WHOLESALE ACCOUNT'],
 ];
 
 export default function Home() {
@@ -42,33 +42,71 @@ export default function Home() {
     <>
       <section className="bg-brand-black text-brand-white flex flex-col items-center text-center gap-6 px-5 md:px-16 py-14 md:py-24">
         <h1 className="text-3xl md:text-6xl font-extrabold uppercase leading-tight tracking-tight max-w-4xl">
-          Six Virgin Hair Textures.<br />Picked to Our Standard.
+          Raw Hair Extensions, Built to Last and Not Just Sold to You, in Every Texture You Wear
         </h1>
-        <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto">
-          <Button variant="secondary" className="w-full md:w-auto">Shop Bundles</Button>
-          <Button variant="ghostInverse" className="w-full md:w-auto">
-            Explore Closures + Frontals
-          </Button>
-        </div>
+        <p className="max-w-2xl text-brand-on-surface-variant">
+          AmandaKelly Co. is a raw hair extensions company. We sell raw hair bundles, closures, and frontals across nine textures, grouped under two origins, from 14" to 32". We ship nationwide across the US. One product line, built the same way for every order that leaves here.
+        </p>
+        <p className="max-w-2xl text-sm text-brand-on-surface-variant">
+          Retail, stylist, and wholesale accounts welcome. See options at checkout or reach out directly.
+        </p>
+        <Button variant="secondary" className="w-full md:w-auto">Shop the Textures</Button>
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20 max-w-3xl mx-auto text-center flex flex-col gap-4">
-        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight">What Makes AmandaKelly Different</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight">Why This Hair Holds Up</h2>
         <p className="text-brand-on-surface-variant leading-relaxed">
-          In an industry saturated with mediocrity, we choose obsession. Our process doesn't start at the sale; it starts at the source. Every single bundle is hand-inspected for cuticle alignment, weight consistency, and natural luster. We don't just sell hair; we provide the architectural foundation for your confidence.
+          This is hair built to last for years, not just to look good in the package on day one. It holds real quality you can actually color, bleach, and style the way you want it to. That's the promise. It's also why raw hair costs more than virgin hair up front: you're paying for something that holds up for years, not just a name on the label. Here's what backs it up.
         </p>
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20 border-t-2 border-brand-black">
-        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-2">Six Textures. One Standard.</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {buildBlocks.map(([title, body]) => (
+            <div key={title} className="flex flex-col gap-3">
+              <h3 className="font-display font-bold uppercase text-lg">{title}</h3>
+              <p className="text-sm text-brand-on-surface-variant leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-10 max-w-3xl">
+          <p className="font-display font-bold uppercase text-sm mb-2">
+            What does cuticle-aligned, hand-tied construction actually mean for how this hair behaves?
+          </p>
+          <p className="text-sm text-brand-on-surface-variant leading-relaxed">
+            It means the hair keeps its natural growth direction from root to tip, and the weft is assembled a strand at a time instead of run through a machine in bulk. Both of those things are why raw hair, cared for properly, is worth paying more for than it costs on day one.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-brand-black text-brand-white py-16 md:py-32 px-5 md:px-16 text-center flex flex-col items-center gap-6">
+        <h2 className="text-3xl md:text-6xl font-extrabold uppercase tracking-tight">One Standard, No Matter Which Texture You Pick</h2>
+        <div className="flex flex-col gap-6 max-w-2xl">
+          <p className="text-lg leading-relaxed">
+            There's no tier to guess between and no fine print to read twice. Every bundle, closure, and frontal we carry, across all nine textures, is built to the same standard above: cuticle intact, cuticle aligned, hand-tied.
+          </p>
+          <p className="text-lg leading-relaxed">
+            Want the fuller story on how to tell real raw hair from hair that's been processed and relabeled? That full breakdown lives on our <a href="/faq" className="underline">FAQ</a>.
+          </p>
+        </div>
+      </section>
+
+      <section className="px-5 md:px-16 py-12 md:py-20">
+        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-2 text-center md:text-left">Nine Textures, Two Origins, 14 to 32 Inches</h2>
         <p className="text-brand-on-surface-variant max-w-xl mb-8">
-          Each texture is ethically sourced and maintained in its most natural, raw state to ensure longevity and seamless blending. Available in every length from 14 to 32 inch.
+          All nine textures ship in every length from 14" to 32", as bundles, closures, and frontals.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 border-l-2 border-t-2 border-brand-black">
-          {textures.map(([name, img]) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 border-l-2 border-t-2 border-brand-black">
+          {textures.map(([name, img, alt]) => (
             <div key={name} className="border-r-2 border-b-2 border-brand-black">
-              <div className="aspect-[1/2] overflow-hidden pointer-events-none">
-                <img src={img} alt={name} className="w-full h-full object-cover" draggable="false" />
+              <div className="aspect-[1/2] overflow-hidden pointer-events-none bg-gray-200">
+                {img ? (
+                  <img src={img} alt={alt} className="w-full h-full object-cover" draggable="false" />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-center p-2" role="img" aria-label={alt}>
+                    <span className="text-[10px] uppercase tracking-widest text-brand-on-surface-variant">Photography Pending</span>
+                  </div>
+                )}
               </div>
               <div className="p-3">
                 <span className="font-display font-bold uppercase text-xs tracking-widest">{name}</span>
@@ -76,56 +114,42 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <p className="text-sm text-brand-on-surface-variant max-w-2xl mt-8">
+          Closures are 4x4 HD transparent lace with a natural part. Frontals are 13x4 HD transparent lace, ear to ear, built to the same three-point standard as every bundle above. Pricing by texture and length is available at checkout.
+        </p>
+        <Button variant="secondary" className="mt-6">Shop the Textures</Button>
       </section>
 
-      <section className="bg-brand-black text-brand-white py-16 md:py-32 px-5 md:px-16 text-center flex flex-col items-center gap-6">
-        <h2 className="text-3xl md:text-6xl font-extrabold uppercase tracking-tight">What Sets Virgin Hair Apart</h2>
-        <div className="flex flex-col gap-6 max-w-2xl">
-          <p className="text-lg leading-relaxed">Our bundles are 100% virgin hair, picked to a standard bold enough for every day and elevated enough for any occasion. That standard is what makes the hair behave through months of wear.</p>
-          <p className="text-lg leading-relaxed">You have probably tried bundles that promised virgin and shed in two weeks. That tangled by wash three. That felt dead the moment they left the box. This is not that.</p>
-          <p className="text-lg leading-relaxed">Every bundle is picked to the same standard we would wear ourselves. Same standard for retail. Same standard for wholesale.</p>
-          <p className="text-lg leading-relaxed">That is why our bundles behave for months, not weeks.</p>
-        </div>
-        <Button variant="secondary">Shop All Bundles</Button>
-      </section>
-
-      <section className="px-5 md:px-16 py-12 md:py-20">
+      <section className="px-5 md:px-16 py-12 md:py-20 border-t-2 border-brand-black">
         <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-8 text-center md:text-left">Closures and Frontals to Match</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {signatureTextures.map(([title, desc, img]) => (
-            <div key={title} className="flex flex-col gap-4">
-              <div className="aspect-square bg-brand-surface border-2 border-brand-black overflow-hidden pointer-events-none">
-                <img src={img} alt={title} className="w-full h-full object-cover" draggable="false" />
-              </div>
-              <div className="flex justify-between items-end border-b-2 border-brand-black pb-4">
-                <div>
-                  <h3 className="font-display font-bold uppercase text-lg">{title}</h3>
-                  <p className="text-sm text-brand-on-surface-variant">{desc}</p>
-                </div>
-                <a href="#" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
-                  Shop Now
-                </a>
-              </div>
+          <div className="flex flex-col gap-4">
+            <div className="aspect-square bg-brand-surface border-2 border-brand-black overflow-hidden pointer-events-none">
+              <img src={closureImg} alt="4x4 HD transparent lace closure, natural part" className="w-full h-full object-cover" draggable="false" />
             </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="bg-brand-surface px-5 md:px-16 py-12 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="order-2 md:order-1 flex justify-center">
-            <div className="relative p-8 border-2 border-brand-black w-full max-w-md">
-              <div className="w-full aspect-[4/5] bg-gray-200" />
+            <div className="flex justify-between items-end border-b-2 border-brand-black pb-4">
+              <div>
+                <h3 className="font-display font-bold uppercase text-lg">4x4 HD Transparent Lace Closures</h3>
+                <p className="text-sm text-brand-on-surface-variant">Natural part, texture-matched to every bundle, built to the same three-point standard.</p>
+              </div>
+              <a href="#" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
+                Shop Now
+              </a>
             </div>
           </div>
-          <div className="order-1 md:order-2">
-            <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-6">Picked the Way We Would Pick for Ourselves</h2>
-            <blockquote className="border-l-4 border-brand-red pl-6">
-              <p className="font-display italic text-xl text-brand-black leading-snug mb-3">
-                "We spent years testing suppliers until we found hair that didn't just look good in the box, but looked better after 6 months of wear. We don't sell anything we wouldn't wear to our own most important events."
-              </p>
-              <cite className="font-display not-italic font-bold uppercase text-xs tracking-widest text-brand-red">— AmandaKelly Team</cite>
-            </blockquote>
+          <div className="flex flex-col gap-4">
+            <div className="aspect-square bg-brand-surface border-2 border-brand-black overflow-hidden pointer-events-none">
+              <img src={frontalImg} alt="13x4 HD transparent lace frontal, ear to ear" className="w-full h-full object-cover" draggable="false" />
+            </div>
+            <div className="flex justify-between items-end border-b-2 border-brand-black pb-4">
+              <div>
+                <h3 className="font-display font-bold uppercase text-lg">13x4 HD Transparent Lace Frontals</h3>
+                <p className="text-sm text-brand-on-surface-variant">Ear-to-ear, built for full parting flexibility, matched to the same three-point standard.</p>
+              </div>
+              <a href="#" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
+                Shop Now
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -134,19 +158,19 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-y-0 md:divide-x-2 divide-black">
           <div className="p-10 md:p-20 flex flex-col items-center text-center gap-3">
             <h3 className="text-2xl md:text-4xl font-extrabold uppercase">For the Chair</h3>
-            <p className="text-brand-on-surface-variant">Exclusive stylist discounts & early access.</p>
+            <p className="text-brand-on-surface-variant">Stylist accounts see stylist-only options at checkout.</p>
             <Button variant="ghost">Join Pro Program</Button>
           </div>
           <div className="p-10 md:p-20 flex flex-col items-center text-center gap-3">
             <h3 className="text-2xl md:text-4xl font-extrabold uppercase">For the Case</h3>
-            <p className="text-brand-on-surface-variant">Wholesale pricing for salons & boutiques.</p>
+            <p className="text-brand-on-surface-variant">Wholesale accounts see case pricing at checkout.</p>
             <Button variant="ghost">Inquire Wholesale</Button>
           </div>
         </div>
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20">
-        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-10 text-center">In Their Own Words</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-10 text-center">What Customers Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map(([quote, tag]) => (
             <TestimonialCard key={tag} quote={quote} tag={tag} />
@@ -154,26 +178,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-brand-surface border-t-2 border-brand-black px-5 md:px-16 py-12 md:py-20">
-        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-8 max-w-4xl mx-auto">Common Questions</h2>
-        <div className="max-w-4xl mx-auto flex flex-col divide-y-2 divide-brand-black border-y-2 border-brand-black">
-          {faqs.map(([q, a]) => (
-            <details key={q} className="group py-4">
-              <summary className="flex justify-between items-center gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                <span className="font-display font-bold uppercase text-sm md:text-lg">{q}</span>
-                <span className="text-xl font-bold shrink-0 transition-transform group-open:rotate-45">+</span>
-              </summary>
-              <p className="pt-3 text-sm text-brand-on-surface-variant leading-relaxed">{a}</p>
-            </details>
-          ))}
-        </div>
-      </section>
-
       <section className="bg-brand-red text-brand-white text-center px-5 md:px-16 py-16 md:py-32 flex flex-col items-center gap-6">
-        <h2 className="text-3xl md:text-6xl font-extrabold uppercase tracking-tight">Shop the Bundles</h2>
-        <p className="max-w-2xl">Ready to see the hair for yourself? Browse the full bundle line, or reach out for wholesale case pricing and terms.</p>
+        <h2 className="text-3xl md:text-6xl font-extrabold uppercase tracking-tight">Shop the Textures</h2>
+        <p className="max-w-2xl">Retail, stylist, and wholesale accounts welcome. See options at checkout or reach out directly.</p>
         <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto">
-          <Button variant="invert" className="w-full md:w-auto">Shop Bundles</Button>
+          <Button variant="invert" className="w-full md:w-auto">Shop the Textures</Button>
           <Button variant="ghostInverse" className="w-full md:w-auto">Wholesale Inquiry</Button>
         </div>
       </section>
