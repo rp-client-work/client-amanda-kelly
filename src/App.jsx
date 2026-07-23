@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import BackToTop from './components/BackToTop';
+import MobileNavBar from './components/MobileNavBar';
 import Home from './pages/Home';
 import HomePreview from './pages/HomePreview';
 import HairGuide from './pages/HairGuide';
@@ -49,6 +51,8 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <BackToTop />
+      <MobileNavBar />
     </div>
   );
 }
