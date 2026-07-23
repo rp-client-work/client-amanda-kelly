@@ -25,7 +25,7 @@ export default function About() {
       {/* Why We Started */}
       <section className="px-5 md:px-16 py-12 md:py-20 border-y-2 border-brand-black">
         <span className="font-display font-bold uppercase tracking-widest text-brand-red text-xs block mb-3">The Origin</span>
-        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4">Why We Started AmandaKelly Co.</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4">Our Founding Story</h2>
         <p className="max-w-2xl text-brand-on-surface-variant leading-relaxed">
           AmandaKelly Co. sells raw hair extensions in three product lines: bundles, closures, and frontals. Every order goes to a retail buyer, a working stylist, or a wholesale account, and the hair does not change between them. Bundle lengths run from 14" to 32". Closures come in 4x4 HD transparent lace for a natural part. Frontals come in 13x4 HD transparent lace for full ear-to-ear coverage. Retail. Stylist. Wholesale. Same standard across every order, from a single bundle to a case.
         </p>
@@ -34,7 +34,7 @@ export default function About() {
       {/* What We Stand For */}
       <section className="bg-brand-black text-brand-white px-5 md:px-16 py-12 md:py-20">
         <span className="font-display font-bold uppercase tracking-widest text-brand-red text-xs block mb-3">The Philosophy</span>
-        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4">What AmandaKelly Co. Stands For</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4">Our Values &amp; Mission</h2>
         <p className="max-w-2xl opacity-80 leading-relaxed">
           Cuticle intact. Aligned root to tip. Hand-tied, strand by strand. What ships is what we would install ourselves. The hair arrives full and healthy, ready for daily wear, event styling, and any dye, bleach, or heat routine a raw cuticle can handle. Bundles are picked one at a time, not sorted in bulk. Closures and frontals are matched to bundle quality so an install reads seamless, not obvious. When you order from AmandaKelly Co., you order hair that behaves like your own once installed. Nothing more. Nothing less.
         </p>
@@ -43,7 +43,7 @@ export default function About() {
       {/* Who We Serve */}
       <section className="px-5 md:px-16 py-12 md:py-20 border-b-2 border-brand-black">
         <span className="font-display font-bold uppercase tracking-widest text-brand-red text-xs block mb-3">The Audience</span>
-        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4">Who We Serve: Retail, Stylist, and Wholesale</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4">Who We Serve</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
           <p className="text-brand-on-surface-variant leading-relaxed">
             AmandaKelly Co. serves three audiences under one quality bar. Retail buyers shopping a single bundle for a Sunday brunch install or a wedding weekend get the same raw hair we ship to boutiques and salons.

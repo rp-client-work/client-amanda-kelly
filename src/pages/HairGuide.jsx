@@ -13,7 +13,7 @@ const compareRows = [
   ['Hand-Tied, Strand by Strand', 'Machine-Sewn in Bulk'],
 ];
 
-const steps = ['Select Texture', 'Pick Your Length', 'Quantity Matters'];
+const steps = ['Select Texture', 'Pick Your Length', 'Choose Quantity'];
 
 // Photography pending for these nine textures per intake notes, matching the
 // homepage mapping. Do not reuse one origin's photo for its sibling.
@@ -33,7 +33,7 @@ export default function HairGuide() {
   return (
     <>
       <section className="bg-[#141414] text-brand-white text-center px-5 md:px-16 py-16 md:py-32 flex flex-col items-center gap-6">
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">Find Your<br />Texture</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">Find Your Texture | AmandaKelly Co.</h1>
         <p className="max-w-2xl">The guide to selecting, matching, and maintaining every texture in the AmandaKelly Co. raw hair lineup.</p>
         <Button variant="secondary">Explore Guide</Button>
       </section>
@@ -96,7 +96,7 @@ export default function HairGuide() {
       </section>
 
       <section className="bg-brand-surface px-5 md:px-16 py-12 md:py-20">
-        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4">Measure the Impact</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4">How Much Hair You Need</h2>
         <p className="max-w-2xl">Landmark Reference: use everyday reference points — shoulder, collarbone, waist — to estimate the length you need before you order.</p>
       </section>
 
@@ -114,7 +114,7 @@ export default function HairGuide() {
       </section>
 
       <section className="bg-brand-red text-brand-white text-center px-5 md:px-16 py-16 md:py-24">
-        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">Master Your Look</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">Shop Your Texture Now</h2>
       </section>
     </>
   );
