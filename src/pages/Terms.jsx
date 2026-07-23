@@ -33,7 +33,7 @@ export default function Terms() {
         <div>
           <h2 className="text-xl md:text-2xl font-extrabold tracking-tight mb-2 text-brand-black">Returns &amp; Exchanges</h2>
           <p>
-            Because our products are hair extensions, we do not accept returns or exchanges on hair that has been worn, installed, washed, cut, colored, or removed from its original packaging. If you receive a defective or incorrect item, contact us within 7 days of delivery through the Contact page so we can make it right.
+            All sales are final. Because our products are hair extensions, we do not accept returns or exchanges once an order has been delivered. The only exception is if you received the wrong order — in that case, contact us within 7 days of delivery through the Contact page so we can make it right.
           </p>
         </div>
 
