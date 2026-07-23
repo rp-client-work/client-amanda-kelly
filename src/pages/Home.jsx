@@ -163,12 +163,12 @@ export default function Home() {
       <section className="border-y-2 border-brand-black">
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-y-0 md:divide-x-2 divide-black">
           <div className="p-10 md:p-20 flex flex-col items-center text-center gap-3">
-            <h3 className="text-2xl md:text-4xl font-extrabold">For the Chair</h3>
+            <h3 className="text-2xl md:text-4xl font-extrabold">Stylist Accounts</h3>
             <p className="text-brand-on-surface-variant">Stylist accounts see stylist-only options at checkout.</p>
             <Button variant="ghost">Join Pro Program</Button>
           </div>
           <div className="p-10 md:p-20 flex flex-col items-center text-center gap-3">
-            <h3 className="text-2xl md:text-4xl font-extrabold">For the Case</h3>
+            <h3 className="text-2xl md:text-4xl font-extrabold">Wholesale &amp; Bulk</h3>
             <p className="text-brand-on-surface-variant">Wholesale accounts see case pricing at checkout.</p>
             <Button variant="ghost">Inquire Wholesale</Button>
           </div>
