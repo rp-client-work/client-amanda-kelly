@@ -16,9 +16,6 @@ export default function Footer() {
           <span className="font-display font-extrabold uppercase tracking-tight text-lg">
             AmandaKelly Co.
           </span>
-          <p className="text-sm opacity-70 leading-relaxed max-w-xs">
-            Raw hair bundles, closures, and frontals. Based in Baltimore, Maryland, shipping nationwide.
-          </p>
           <a
             href="https://instagram.com/amandakellycompany_"
             target="_blank"
@@ -52,7 +49,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="max-w-[1440px] mx-auto font-display font-bold uppercase tracking-widest text-xs opacity-50 text-center md:text-left mt-10 pt-6 border-t border-white/10">
+      <p className="max-w-[1440px] mx-auto font-display font-bold uppercase tracking-widest text-[10px] opacity-50 text-center md:text-left mt-10 pt-6 border-t border-white/10">
         © 2026. All rights reserved.
       </p>
     </footer>
