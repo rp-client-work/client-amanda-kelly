@@ -33,7 +33,7 @@ export default function HairGuide() {
   return (
     <>
       <section className="bg-[#141414] text-brand-white text-center px-5 md:px-16 py-16 md:py-32 flex flex-col items-center gap-6">
-        <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight">Find Your<br />Texture</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">Find Your<br />Texture</h1>
         <p className="max-w-2xl">The guide to selecting, matching, and maintaining every texture in the AmandaKelly Co. raw hair lineup.</p>
         <Button variant="secondary">Explore Guide</Button>
       </section>
@@ -88,7 +88,7 @@ export default function HairGuide() {
               )}
               <div className="p-4">
                 <h4 className="font-display font-bold text-base mb-1">{name}</h4>
-                <p className="text-sm text-brand-on-surface-variant">{desc}</p>
+                <p className="text-base text-brand-on-surface-variant">{desc}</p>
               </div>
             </div>
           ))}

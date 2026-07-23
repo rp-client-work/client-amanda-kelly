@@ -15,7 +15,7 @@ export default function About() {
     <>
       {/* Hero */}
       <section className="px-5 md:px-16 py-14 md:py-20">
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-none mb-3 tracking-tight">About AmandaKelly Co.</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold leading-none mb-3 tracking-tight">About AmandaKelly Co.</h1>
         <p className="font-display font-bold uppercase tracking-widest text-brand-red text-xs mb-3">Raw Hair Extensions.</p>
         <p className="max-w-md text-brand-on-surface-variant border-l-4 border-brand-red pl-4">
           AmandaKelly Co. is a raw hair extensions brand offering raw hair bundles, closures, and frontals across nine textures, grouped under two origins. We serve retail buyers, working stylists, and wholesale accounts nationwide, with local Baltimore pickup available at checkout. Every order carries the same standard, whether it ships as one bundle or a full case.
@@ -86,7 +86,7 @@ export default function About() {
                 <span className="font-display font-bold uppercase text-sm md:text-base">{q}</span>
                 <span className="text-xl font-bold shrink-0 transition-transform group-open:rotate-45">+</span>
               </summary>
-              <p className="pt-3 text-sm text-brand-on-surface-variant leading-relaxed">{a}</p>
+              <p className="pt-3 text-base text-brand-on-surface-variant leading-relaxed">{a}</p>
             </details>
           ))}
         </div>

@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <>
       <section className="bg-brand-black text-brand-white px-5 md:px-16 py-14 md:py-20">
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
           Contact AmandaKelly<br />Get in Touch.
         </h1>
         <div className="max-w-4xl">
@@ -26,7 +26,7 @@ export default function Contact() {
           {supportCols.map(([title, desc]) => (
             <div key={title} className="p-8 md:p-12">
               <span className="font-display font-bold uppercase text-xs tracking-widest block mb-4">{title}</span>
-              <p className="text-sm text-brand-on-surface-variant max-w-xs">{desc}</p>
+              <p className="text-base text-brand-on-surface-variant max-w-xs">{desc}</p>
             </div>
           ))}
         </div>

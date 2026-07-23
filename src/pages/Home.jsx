@@ -41,13 +41,13 @@ export default function Home() {
   return (
     <>
       <section className="bg-brand-black text-brand-white flex flex-col items-center text-center gap-6 px-5 md:px-16 py-14 md:py-24">
-        <h1 className="text-3xl md:text-6xl font-extrabold leading-tight tracking-tight max-w-4xl">
+        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight max-w-4xl">
           Raw Hair Extensions
         </h1>
         <p className="max-w-2xl text-brand-on-surface-variant">
           Built to last, not just sold to you. AmandaKelly Co. is a raw hair extensions company. We sell raw hair bundles, closures, and frontals across nine textures, grouped under two origins, from 14" to 32". We ship nationwide across the US. One product line, built the same way for every order that leaves here.
         </p>
-        <p className="max-w-2xl text-sm text-brand-on-surface-variant">
+        <p className="max-w-2xl text-base text-brand-on-surface-variant">
           Retail, stylist, and wholesale accounts welcome. See options at checkout or reach out directly.
         </p>
         <Button variant="secondary" className="w-full md:w-auto">Shop the Textures</Button>
@@ -65,7 +65,7 @@ export default function Home() {
           {buildBlocks.map(([title, body]) => (
             <div key={title} className="flex flex-col gap-3">
               <h3 className="font-display font-bold text-lg">{title}</h3>
-              <p className="text-sm text-brand-on-surface-variant leading-relaxed">{body}</p>
+              <p className="text-base text-brand-on-surface-variant leading-relaxed">{body}</p>
             </div>
           ))}
         </div>
@@ -73,14 +73,14 @@ export default function Home() {
           <p className="font-display font-bold text-sm mb-2">
             What This Means
           </p>
-          <p className="text-sm text-brand-on-surface-variant leading-relaxed">
+          <p className="text-base text-brand-on-surface-variant leading-relaxed">
             The hair keeps its natural growth direction from root to tip, and every weft is assembled a strand at a time instead of run through a machine in bulk. Both of those things are why raw hair, cared for properly, is worth paying more for than it costs on day one.
           </p>
         </div>
       </section>
 
       <section className="bg-brand-black text-brand-white py-16 md:py-32 px-5 md:px-16 text-center flex flex-col items-center gap-6">
-        <h2 className="text-3xl md:text-6xl font-extrabold tracking-tight">Our Quality Standard</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">Our Quality Standard</h2>
         <div className="flex flex-col gap-6 max-w-2xl">
           <p className="text-lg leading-relaxed">
             There's no tier to guess between and no fine print to read twice. Every bundle, closure, and frontal we carry, across all nine textures, is built to the same standard above: cuticle intact, cuticle aligned, hand-tied.
@@ -116,11 +116,11 @@ export default function Home() {
         </div>
         <div className="mt-10 max-w-3xl">
           <p className="font-display font-bold text-sm mb-2">Available Lengths?</p>
-          <p className="text-sm text-brand-on-surface-variant leading-relaxed">
+          <p className="text-base text-brand-on-surface-variant leading-relaxed">
             All nine textures ship in every length from 14" to 32", as bundles, closures, and frontals.
           </p>
         </div>
-        <p className="text-sm text-brand-on-surface-variant max-w-2xl mt-6">
+        <p className="text-base text-brand-on-surface-variant max-w-2xl mt-6">
           Closures are 4x4 HD transparent lace with a natural part. Frontals are 13x4 HD transparent lace, ear to ear, built to the same three-point standard as every bundle above. Pricing by texture and length is available at checkout.
         </p>
         <Button variant="secondary" className="mt-6">Shop the Textures</Button>
@@ -136,7 +136,7 @@ export default function Home() {
             <div className="flex justify-between items-end border-b-2 border-brand-black pb-4">
               <div>
                 <h3 className="font-display font-bold text-lg">4x4 HD Transparent Lace Closures</h3>
-                <p className="text-sm text-brand-on-surface-variant">Natural part, texture-matched to every bundle, built to the same three-point standard.</p>
+                <p className="text-base text-brand-on-surface-variant">Natural part, texture-matched to every bundle, built to the same three-point standard.</p>
               </div>
               <a href="#" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
                 Shop Now
@@ -150,7 +150,7 @@ export default function Home() {
             <div className="flex justify-between items-end border-b-2 border-brand-black pb-4">
               <div>
                 <h3 className="font-display font-bold text-lg">13x4 HD Transparent Lace Frontals</h3>
-                <p className="text-sm text-brand-on-surface-variant">Ear-to-ear, built for full parting flexibility, matched to the same three-point standard.</p>
+                <p className="text-base text-brand-on-surface-variant">Ear-to-ear, built for full parting flexibility, matched to the same three-point standard.</p>
               </div>
               <a href="#" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
                 Shop Now
@@ -163,12 +163,12 @@ export default function Home() {
       <section className="border-y-2 border-brand-black">
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-y-0 md:divide-x-2 divide-black">
           <div className="p-10 md:p-20 flex flex-col items-center text-center gap-3">
-            <h3 className="text-2xl md:text-4xl font-extrabold">Stylist Accounts</h3>
+            <h3 className="text-xl md:text-2xl font-extrabold">Stylist Accounts</h3>
             <p className="text-brand-on-surface-variant">Stylist accounts see stylist-only options at checkout.</p>
             <Button variant="ghost">Join Pro Program</Button>
           </div>
           <div className="p-10 md:p-20 flex flex-col items-center text-center gap-3">
-            <h3 className="text-2xl md:text-4xl font-extrabold">Wholesale &amp; Bulk</h3>
+            <h3 className="text-xl md:text-2xl font-extrabold">Wholesale &amp; Bulk</h3>
             <p className="text-brand-on-surface-variant">Wholesale accounts see case pricing at checkout.</p>
             <Button variant="ghost">Inquire Wholesale</Button>
           </div>
@@ -185,7 +185,7 @@ export default function Home() {
       </section>
 
       <section className="bg-brand-red text-brand-white text-center px-5 md:px-16 py-16 md:py-32 flex flex-col items-center gap-6">
-        <h2 className="text-3xl md:text-6xl font-extrabold tracking-tight">Shop the Textures</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">Shop the Textures</h2>
         <p className="max-w-2xl">Retail, stylist, and wholesale accounts welcome. See options at checkout or reach out directly.</p>
         <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto">
           <Button variant="invert" className="w-full md:w-auto">Shop the Textures</Button>
