@@ -96,7 +96,7 @@ export default function Home() {
         <p className="text-brand-on-surface-variant max-w-xl mb-8">
           Nine textures, two origins, every length from 14" to 32".
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 border-l-2 border-t-2 border-brand-black">
+        <div className="grid grid-cols-3 border-l-2 border-t-2 border-brand-black">
           {textures.map(([name, img, alt]) => (
             <div key={name} className="border-r-2 border-b-2 border-brand-black">
               <div className="aspect-[1/2] overflow-hidden pointer-events-none bg-gray-200">
