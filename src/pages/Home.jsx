@@ -70,9 +70,9 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-10 max-w-3xl">
-          <p className="font-display font-bold text-sm mb-2">
+          <h3 className="font-display font-bold text-lg mb-2">
             What This Means
-          </p>
+          </h3>
           <p className="text-base text-brand-on-surface-variant leading-relaxed">
             The hair keeps its natural growth direction from root to tip, and every weft is assembled a strand at a time instead of run through a machine in bulk. Both of those things are why raw hair, cared for properly, is worth paying more for than it costs on day one.
           </p>
@@ -115,7 +115,7 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-10 max-w-3xl">
-          <p className="font-display font-bold text-sm mb-2">Available Lengths?</p>
+          <h3 className="font-display font-bold text-lg mb-2">Available Lengths?</h3>
           <p className="text-base text-brand-on-surface-variant leading-relaxed">
             All nine textures ship in every length from 14" to 32", as bundles, closures, and frontals.
           </p>
