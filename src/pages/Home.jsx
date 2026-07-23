@@ -26,9 +26,9 @@ const textures = [
 ];
 
 const buildBlocks = [
-  ['The Cuticle Stays Intact', "Raw hair, by definition, keeps its cuticle layer. Nothing about it gets stripped or acid-washed to fake a smoothness it doesn't have naturally."],
-  ["It's Aligned Root-to-Tip, Never Stripped or Reversed", "Every strand runs the direction it grew in. Root to tip. That's what raw hair is supposed to look like, and it's a big part of why it doesn't mat or tangle at the base after a few washes."],
-  ['Every Weft Is Hand-Tied, Strand by Strand', "Raw hair wefts are built by hand, one strand at a time. Slower to make. It lies flatter against the scalp and holds an install longer than a machine-sewn weft does."],
+  ['Cuticle Intact', "Raw hair, by definition, keeps its cuticle layer. Nothing about it gets stripped or acid-washed to fake a smoothness it doesn't have naturally."],
+  ['Aligned Root to Tip', "Every strand runs the direction it grew in. Root to tip. That's what raw hair is supposed to look like, and it's a big part of why it doesn't mat or tangle at the base after a few washes."],
+  ['Hand-Tied Wefts', "Raw hair wefts are built by hand, one strand at a time. Slower to make. It lies flatter against the scalp and holds an install longer than a machine-sewn weft does."],
 ];
 
 const testimonials = [
@@ -42,10 +42,10 @@ export default function Home() {
     <>
       <section className="bg-brand-black text-brand-white flex flex-col items-center text-center gap-6 px-5 md:px-16 py-14 md:py-24">
         <h1 className="text-3xl md:text-6xl font-extrabold uppercase leading-tight tracking-tight max-w-4xl">
-          Raw Hair Extensions, Built to Last and Not Just Sold to You, in Every Texture You Wear
+          Raw Hair Extensions
         </h1>
         <p className="max-w-2xl text-brand-on-surface-variant">
-          AmandaKelly Co. is a raw hair extensions company. We sell raw hair bundles, closures, and frontals across nine textures, grouped under two origins, from 14" to 32". We ship nationwide across the US. One product line, built the same way for every order that leaves here.
+          Built to last, not just sold to you. AmandaKelly Co. is a raw hair extensions company. We sell raw hair bundles, closures, and frontals across nine textures, grouped under two origins, from 14" to 32". We ship nationwide across the US. One product line, built the same way for every order that leaves here.
         </p>
         <p className="max-w-2xl text-sm text-brand-on-surface-variant">
           Retail, stylist, and wholesale accounts welcome. See options at checkout or reach out directly.
@@ -54,7 +54,7 @@ export default function Home() {
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20 max-w-3xl mx-auto text-center flex flex-col gap-4">
-        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight">Why This Hair Holds Up</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight">How It's Built</h2>
         <p className="text-brand-on-surface-variant leading-relaxed">
           This is hair built to last for years, not just to look good in the package on day one. It holds real quality you can actually color, bleach, and style the way you want it to. That's the promise. It's also why raw hair costs more than virgin hair up front: you're paying for something that holds up for years, not just a name on the label. Here's what backs it up.
         </p>
@@ -71,16 +71,16 @@ export default function Home() {
         </div>
         <div className="mt-10 max-w-3xl">
           <p className="font-display font-bold uppercase text-sm mb-2">
-            What does cuticle-aligned, hand-tied construction actually mean for how this hair behaves?
+            What This Means
           </p>
           <p className="text-sm text-brand-on-surface-variant leading-relaxed">
-            It means the hair keeps its natural growth direction from root to tip, and the weft is assembled a strand at a time instead of run through a machine in bulk. Both of those things are why raw hair, cared for properly, is worth paying more for than it costs on day one.
+            <span className="font-bold">The hair keeps its natural growth direction from root to tip, and every weft is assembled a strand at a time instead of run through a machine in bulk.</span> Both of those things are why raw hair, cared for properly, is worth paying more for than it costs on day one.
           </p>
         </div>
       </section>
 
       <section className="bg-brand-black text-brand-white py-16 md:py-32 px-5 md:px-16 text-center flex flex-col items-center gap-6">
-        <h2 className="text-3xl md:text-6xl font-extrabold uppercase tracking-tight">One Standard, No Matter Which Texture You Pick</h2>
+        <h2 className="text-3xl md:text-6xl font-extrabold uppercase tracking-tight">Our Quality Standard</h2>
         <div className="flex flex-col gap-6 max-w-2xl">
           <p className="text-lg leading-relaxed">
             There's no tier to guess between and no fine print to read twice. Every bundle, closure, and frontal we carry, across all nine textures, is built to the same standard above: cuticle intact, cuticle aligned, hand-tied.
@@ -92,9 +92,9 @@ export default function Home() {
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20">
-        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-2 text-center md:text-left">Nine Textures, Two Origins, 14 to 32 Inches</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-2 text-center md:text-left">Shop by Texture</h2>
         <p className="text-brand-on-surface-variant max-w-xl mb-8">
-          All nine textures ship in every length from 14" to 32", as bundles, closures, and frontals.
+          Nine textures, two origins, every length from 14" to 32".
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 border-l-2 border-t-2 border-brand-black">
           {textures.map(([name, img, alt]) => (
@@ -114,7 +114,13 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="text-sm text-brand-on-surface-variant max-w-2xl mt-8">
+        <div className="mt-10 max-w-3xl">
+          <p className="font-display font-bold uppercase text-sm mb-2">Available Lengths?</p>
+          <p className="text-sm text-brand-on-surface-variant leading-relaxed">
+            <span className="font-bold">All nine textures ship in every length from 14" to 32", as bundles, closures, and frontals.</span>
+          </p>
+        </div>
+        <p className="text-sm text-brand-on-surface-variant max-w-2xl mt-6">
           Closures are 4x4 HD transparent lace with a natural part. Frontals are 13x4 HD transparent lace, ear to ear, built to the same three-point standard as every bundle above. Pricing by texture and length is available at checkout.
         </p>
         <Button variant="secondary" className="mt-6">Shop the Textures</Button>
