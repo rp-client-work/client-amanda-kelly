@@ -51,7 +51,7 @@ export default function Home() {
         <p className="max-w-2xl text-base text-brand-on-surface-variant">
           Retail, stylist, and wholesale accounts welcome. See options at checkout or reach out directly.
         </p>
-        <Button variant="secondary" className="w-full md:w-auto">Shop the Textures</Button>
+        <Button variant="secondary" className="w-full md:w-auto">Shop the Collection</Button>
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20 max-w-3xl mx-auto text-center flex flex-col gap-4">
@@ -93,7 +93,7 @@ export default function Home() {
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20">
-        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-2 text-center md:text-left">Shop by Texture</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-2 text-center md:text-left">Shop the Collection</h2>
         <p className="text-brand-on-surface-variant max-w-xl mb-8">
           Two origins, every length from 14" to 32".
         </p>
@@ -124,7 +124,7 @@ export default function Home() {
         <p className="text-base text-brand-on-surface-variant max-w-2xl mt-6">
           Closures are 4x4 HD transparent lace with a natural part. Frontals are 13x4 HD transparent lace, ear to ear, built to the same three-point standard as every bundle above. Pricing by texture and length is available at checkout.
         </p>
-        <Button variant="secondary" className="mt-6">Shop the Textures</Button>
+        <Button variant="secondary" className="mt-6">Shop the Collection</Button>
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20 border-t-2 border-brand-black">
@@ -186,10 +186,10 @@ export default function Home() {
       </section>
 
       <section className="bg-brand-red text-brand-white text-center px-5 md:px-16 py-16 md:py-32 flex flex-col items-center gap-6">
-        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">Shop the Textures</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">Shop the Collection</h2>
         <p className="max-w-2xl">Retail, stylist, and wholesale accounts welcome. See options at checkout or reach out directly.</p>
         <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto">
-          <Button variant="invert" className="w-full md:w-auto">Shop the Textures</Button>
+          <Button variant="invert" className="w-full md:w-auto">Shop the Collection</Button>
           <Button variant="ghostInverse" className="w-full md:w-auto">Wholesale Inquiry</Button>
         </div>
       </section>

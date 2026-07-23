@@ -114,7 +114,7 @@ export default function HairGuide() {
       </section>
 
       <section className="bg-brand-red text-brand-white text-center px-5 md:px-16 py-16 md:py-24">
-        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">Shop Your Texture Now</h2>
+        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">Shop the Collection Now</h2>
       </section>
     </>
   );
