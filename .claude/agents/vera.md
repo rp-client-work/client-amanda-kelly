@@ -80,6 +80,17 @@ State plainly in your output everything you fixed (so the orchestrator can see w
 - Link and CTA text is descriptive on its own, out of context (no bare "click here" or "read more" with no named destination) (hard)
 - Plain-language readability: no unexplained jargon or acronyms on consumer-facing pages, sentences aren't so dense or overloaded with clauses that they'd be hard to follow read aloud (soft)
 - Color- or shape-only distinctions aren't the sole way information is conveyed in copy describing a visual comparison (e.g. "the green option" with no other identifying label) (soft)
+- **Type scale consistency (hard):** if the draft or layout brief specifies or implies text sizing (emphasis cues, "small print," a table/list meant to read as body copy, etc.), it must be consistent with the Typography & Type Scale Standard below, not drifting between sizes for content at the same tier (e.g. some body paragraphs implied as de-emphasized/small while equivalent paragraphs elsewhere aren't, for no stated reason). Flag and correct any such drift the same way you'd fix inconsistent heading hierarchy.
+
+### Typography & Type Scale Standard (reference)
+
+This is the project's canonical type scale, current as of July 2026 (WCAG guidance plus modern web-typography practice). Any page implementation built from your approved output should follow it:
+
+- **Body text:** 16px minimum, never smaller for actual reading copy (paragraphs, testimonial quotes, FAQ answers, card descriptions). 18px is fine for lead/intro paragraphs. Line height 1.5-1.7. Short labels, eyebrows, and tags (not meant to be read as prose) are the only exception and may run smaller.
+- **H3:** ~18-22px desktop, ~18-20px mobile.
+- **H2:** ~24-32px desktop, ~22-26px mobile.
+- **H1:** ~32-48px desktop, ~28-36px mobile. Nothing on the page should render larger than the true H1, including stylized "billboard" section headers.
+- Use a consistent, progressive scale between levels (roughly 1.25-1.5x step up per level) and never skip a heading level.
 
 ## Output format
 
