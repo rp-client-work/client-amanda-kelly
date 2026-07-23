@@ -10,6 +10,7 @@ export default function Footer() {
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 font-display font-bold uppercase tracking-widest text-sm">
           <a href="https://instagram.com/amandakellycompany_" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Instagram</a>
           <Link to="/terms" className="hover:text-brand-red transition-colors">Terms</Link>
+          <Link to="/privacy" className="hover:text-brand-red transition-colors">Privacy Policy</Link>
         </div>
         <p className="font-display font-bold uppercase tracking-widest text-xs opacity-50">
           © 2024. All rights reserved.

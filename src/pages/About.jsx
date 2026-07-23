@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 
 const faqs = [
-  ['What is AmandaKelly Co.?', 'AmandaKelly Co. is a raw hair extensions brand offering raw hair bundles, closures, and frontals across nine textures. We serve retail buyers, working stylists, and wholesale accounts nationwide, with local pickup available in Baltimore.'],
-  ['Where is AmandaKelly Co. based?', 'AmandaKelly Co. is based in Baltimore. Every order ships nationwide across the United States. Buyers in the Baltimore area can also choose local pickup at checkout instead of shipping.'],
+  ['What is AmandaKelly Co.?', 'AmandaKelly Co. is a raw hair extensions brand offering raw hair bundles, closures, and frontals across nine textures. We serve retail buyers, working stylists, and wholesale accounts nationwide, with local pickup available in Baltimore, Maryland.'],
+  ['Where is AmandaKelly Co. based?', 'AmandaKelly Co. is based in Baltimore, Maryland. Every order ships nationwide across the United States. Buyers in the Baltimore, Maryland area can also choose local pickup at checkout instead of shipping.'],
   ['Is AmandaKelly Co. hair actually raw?', "Yes. Every bundle, closure, and frontal keeps its cuticle layer intact and aligned in one direction, root to tip. Nothing is stripped or acid-washed to fake a smoothness raw hair doesn't have naturally."],
   ['Can I dye, bleach, or heat style AmandaKelly Co. hair?', 'Yes to all three. Raw hair with the cuticle intact lifts cleanly and styles cleanly. We recommend a stylist do a strand test before bleaching, and always use a heat protectant when heat styling.'],
   ['Does AmandaKelly Co. sell wholesale?', 'Yes. AmandaKelly Co. sells to retail buyers, stylists, and wholesale accounts on the same raw hair standard across all order sizes. For case quantities, custom orders, and wholesale pricing, contact us through the wholesale form.'],
@@ -19,7 +19,7 @@ export default function About() {
         <h1 className="text-4xl md:text-5xl font-extrabold leading-none mb-3 tracking-tight">About AmandaKelly Co.</h1>
         <p className="font-display font-bold uppercase tracking-widest text-brand-red text-xs mb-3">Raw Hair Extensions.</p>
         <p className="max-w-md text-brand-on-surface-variant border-l-4 border-brand-red pl-4">
-          AmandaKelly Co. is a raw hair extensions brand offering raw hair bundles, closures, and frontals across nine textures, grouped under two origins. We serve retail buyers, working stylists, and wholesale accounts nationwide, with local Baltimore pickup available at checkout. Every order carries the same standard, whether it ships as one bundle or a full case.
+          AmandaKelly Co. is a raw hair extensions brand offering raw hair bundles, closures, and frontals across nine textures, grouped under two origins. We serve retail buyers, working stylists, and wholesale accounts nationwide, with local Baltimore, Maryland pickup available at checkout. Every order carries the same standard, whether it ships as one bundle or a full case.
         </p>
       </section>
 

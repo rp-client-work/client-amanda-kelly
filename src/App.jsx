@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import AboutPreview from './pages/AboutPreview';
 import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 
 // React Router doesn't scroll to a #hash on client-side navigation by
 // default; without this, links like /about#faq land on the page but never
@@ -44,6 +45,7 @@ function App() {
           <Route path="/hair-guide" element={<HairGuide />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </main>
       <Footer />
