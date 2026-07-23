@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <>
       <section className="bg-brand-black text-brand-white px-5 md:px-16 py-14 md:py-20">
-        <h1 className="text-4xl md:text-6xl font-extrabold uppercase tracking-tight mb-6">
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
           Contact AmandaKelly<br />Get in Touch.
         </h1>
         <div className="max-w-4xl">
@@ -35,7 +35,7 @@ export default function Contact() {
       <section className="bg-brand-surface px-5 md:px-16 py-12 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-start">
           <div className="lg:col-span-4">
-            <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-3">Direct Inquiry</h2>
+            <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-3">Direct Inquiry</h2>
             <p className="text-brand-on-surface-variant mb-3">
               Not sure which desk? Send a message here and we'll route it. Real people, real replies, within 2 business days.
             </p>

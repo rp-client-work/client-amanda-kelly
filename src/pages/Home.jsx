@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       <section className="bg-brand-black text-brand-white flex flex-col items-center text-center gap-6 px-5 md:px-16 py-14 md:py-24">
-        <h1 className="text-3xl md:text-6xl font-extrabold uppercase leading-tight tracking-tight max-w-4xl">
+        <h1 className="text-3xl md:text-6xl font-extrabold leading-tight tracking-tight max-w-4xl">
           Raw Hair Extensions
         </h1>
         <p className="max-w-2xl text-brand-on-surface-variant">
@@ -54,7 +54,7 @@ export default function Home() {
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20 max-w-3xl mx-auto text-center flex flex-col gap-4">
-        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight">How It's Built</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight">How It's Built</h2>
         <p className="text-brand-on-surface-variant leading-relaxed">
           This is hair built to last for years, not just to look good in the package on day one. It holds real quality you can actually color, bleach, and style the way you want it to. That's the promise. It's also why raw hair costs more than virgin hair up front: you're paying for something that holds up for years, not just a name on the label. Here's what backs it up.
         </p>
@@ -64,23 +64,23 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {buildBlocks.map(([title, body]) => (
             <div key={title} className="flex flex-col gap-3">
-              <h3 className="font-display font-bold uppercase text-lg">{title}</h3>
+              <h3 className="font-display font-bold text-lg">{title}</h3>
               <p className="text-sm text-brand-on-surface-variant leading-relaxed">{body}</p>
             </div>
           ))}
         </div>
         <div className="mt-10 max-w-3xl">
-          <p className="font-display font-bold uppercase text-sm mb-2">
+          <p className="font-display font-bold text-sm mb-2">
             What This Means
           </p>
           <p className="text-sm text-brand-on-surface-variant leading-relaxed">
-            <span className="font-bold">The hair keeps its natural growth direction from root to tip, and every weft is assembled a strand at a time instead of run through a machine in bulk.</span> Both of those things are why raw hair, cared for properly, is worth paying more for than it costs on day one.
+            The hair keeps its natural growth direction from root to tip, and every weft is assembled a strand at a time instead of run through a machine in bulk. Both of those things are why raw hair, cared for properly, is worth paying more for than it costs on day one.
           </p>
         </div>
       </section>
 
       <section className="bg-brand-black text-brand-white py-16 md:py-32 px-5 md:px-16 text-center flex flex-col items-center gap-6">
-        <h2 className="text-3xl md:text-6xl font-extrabold uppercase tracking-tight">Our Quality Standard</h2>
+        <h2 className="text-3xl md:text-6xl font-extrabold tracking-tight">Our Quality Standard</h2>
         <div className="flex flex-col gap-6 max-w-2xl">
           <p className="text-lg leading-relaxed">
             There's no tier to guess between and no fine print to read twice. Every bundle, closure, and frontal we carry, across all nine textures, is built to the same standard above: cuticle intact, cuticle aligned, hand-tied.
@@ -92,7 +92,7 @@ export default function Home() {
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20">
-        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-2 text-center md:text-left">Shop by Texture</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-2 text-center md:text-left">Shop by Texture</h2>
         <p className="text-brand-on-surface-variant max-w-xl mb-8">
           Nine textures, two origins, every length from 14" to 32".
         </p>
@@ -115,9 +115,9 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-10 max-w-3xl">
-          <p className="font-display font-bold uppercase text-sm mb-2">Available Lengths?</p>
+          <p className="font-display font-bold text-sm mb-2">Available Lengths?</p>
           <p className="text-sm text-brand-on-surface-variant leading-relaxed">
-            <span className="font-bold">All nine textures ship in every length from 14" to 32", as bundles, closures, and frontals.</span>
+            All nine textures ship in every length from 14" to 32", as bundles, closures, and frontals.
           </p>
         </div>
         <p className="text-sm text-brand-on-surface-variant max-w-2xl mt-6">
@@ -127,7 +127,7 @@ export default function Home() {
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20 border-t-2 border-brand-black">
-        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-8 text-center md:text-left">Closures and Frontals to Match</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-8 text-center md:text-left">Closures and Frontals to Match</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="flex flex-col gap-4">
             <div className="aspect-square bg-brand-surface border-2 border-brand-black overflow-hidden pointer-events-none">
@@ -135,7 +135,7 @@ export default function Home() {
             </div>
             <div className="flex justify-between items-end border-b-2 border-brand-black pb-4">
               <div>
-                <h3 className="font-display font-bold uppercase text-lg">4x4 HD Transparent Lace Closures</h3>
+                <h3 className="font-display font-bold text-lg">4x4 HD Transparent Lace Closures</h3>
                 <p className="text-sm text-brand-on-surface-variant">Natural part, texture-matched to every bundle, built to the same three-point standard.</p>
               </div>
               <a href="#" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
@@ -149,7 +149,7 @@ export default function Home() {
             </div>
             <div className="flex justify-between items-end border-b-2 border-brand-black pb-4">
               <div>
-                <h3 className="font-display font-bold uppercase text-lg">13x4 HD Transparent Lace Frontals</h3>
+                <h3 className="font-display font-bold text-lg">13x4 HD Transparent Lace Frontals</h3>
                 <p className="text-sm text-brand-on-surface-variant">Ear-to-ear, built for full parting flexibility, matched to the same three-point standard.</p>
               </div>
               <a href="#" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
@@ -163,12 +163,12 @@ export default function Home() {
       <section className="border-y-2 border-brand-black">
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y-2 md:divide-y-0 md:divide-x-2 divide-black">
           <div className="p-10 md:p-20 flex flex-col items-center text-center gap-3">
-            <h3 className="text-2xl md:text-4xl font-extrabold uppercase">For the Chair</h3>
+            <h3 className="text-2xl md:text-4xl font-extrabold">For the Chair</h3>
             <p className="text-brand-on-surface-variant">Stylist accounts see stylist-only options at checkout.</p>
             <Button variant="ghost">Join Pro Program</Button>
           </div>
           <div className="p-10 md:p-20 flex flex-col items-center text-center gap-3">
-            <h3 className="text-2xl md:text-4xl font-extrabold uppercase">For the Case</h3>
+            <h3 className="text-2xl md:text-4xl font-extrabold">For the Case</h3>
             <p className="text-brand-on-surface-variant">Wholesale accounts see case pricing at checkout.</p>
             <Button variant="ghost">Inquire Wholesale</Button>
           </div>
@@ -176,7 +176,7 @@ export default function Home() {
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20">
-        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-tight mb-10 text-center">What Customers Say</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-10 text-center">What Customers Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map(([quote, tag]) => (
             <TestimonialCard key={tag} quote={quote} tag={tag} />
@@ -185,7 +185,7 @@ export default function Home() {
       </section>
 
       <section className="bg-brand-red text-brand-white text-center px-5 md:px-16 py-16 md:py-32 flex flex-col items-center gap-6">
-        <h2 className="text-3xl md:text-6xl font-extrabold uppercase tracking-tight">Shop the Textures</h2>
+        <h2 className="text-3xl md:text-6xl font-extrabold tracking-tight">Shop the Textures</h2>
         <p className="max-w-2xl">Retail, stylist, and wholesale accounts welcome. See options at checkout or reach out directly.</p>
         <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto">
           <Button variant="invert" className="w-full md:w-auto">Shop the Textures</Button>
