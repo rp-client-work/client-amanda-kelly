@@ -25,7 +25,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x-2 divide-black">
           {supportCols.map(([title, desc]) => (
             <div key={title} className="p-8 md:p-12">
-              <span className="font-display font-bold uppercase text-xs tracking-widest block mb-4">{title}</span>
+              <h3 className="font-display font-bold text-lg mb-4">{title}</h3>
               <p className="text-base text-brand-on-surface-variant max-w-xs">{desc}</p>
             </div>
           ))}
