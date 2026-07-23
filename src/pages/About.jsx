@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 
 const faqs = [
@@ -59,7 +60,7 @@ export default function About() {
         <span className="font-display font-bold uppercase tracking-widest text-brand-red text-xs block mb-3">The Lineup</span>
         <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4">Nine Textures, Two Origins</h2>
         <p className="max-w-2xl text-brand-on-surface-variant leading-relaxed">
-          Burmese Curly. Indian Wavy. Cambodian Wavy, Straight, and Deep Wave. Brazilian Wavy, Straight, Deep Wave, and Deep Curly. Every texture ships in every length from 14" to 32", as bundles, closures, and frontals, all built to the same cuticle-intact, hand-tied standard. See the full lineup on the <a href="/hair-guide" className="underline">Hair Guide</a>.
+          Burmese Curly. Indian Wavy. Cambodian Wavy, Straight, and Deep Wave. Brazilian Wavy, Straight, Deep Wave, and Deep Curly. Every texture ships in every length from 14" to 32", as bundles, closures, and frontals, all built to the same cuticle-intact, hand-tied standard. See the full lineup on the <Link to="/hair-guide" className="underline">Hair Guide</Link>.
         </p>
       </section>
 
@@ -76,7 +77,7 @@ export default function About() {
       </section>
 
       {/* FAQ */}
-      <section className="px-5 md:px-16 py-12 md:py-20">
+      <section id="faq" className="px-5 md:px-16 py-12 md:py-20">
         <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-2">Common Questions</h2>
         <p className="text-brand-on-surface-variant mb-6">Quick answers to the questions we get most about AmandaKelly Co. hair, shipping, and how we sell.</p>
         <div className="divide-y-2 divide-brand-black border-y-2 border-brand-black max-w-4xl">

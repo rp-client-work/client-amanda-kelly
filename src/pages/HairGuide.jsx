@@ -100,7 +100,7 @@ export default function HairGuide() {
         <p className="max-w-2xl">Landmark Reference: use everyday reference points — shoulder, collarbone, waist — to estimate the length you need before you order.</p>
       </section>
 
-      <section className="px-5 md:px-16 py-12 md:py-20">
+      <section id="closures-frontals" className="px-5 md:px-16 py-12 md:py-20">
         <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-6">Closures &amp; Frontals</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {['Closure vs. Frontal', '4x4 HD Closure', '13x4 HD Frontal'].map((t) => (

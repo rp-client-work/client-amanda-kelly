@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import TestimonialCard from '../components/TestimonialCard';
 import burmeseCurlyImg from '../assets/textures/texture-burmese-curly.webp';
@@ -86,7 +87,7 @@ export default function Home() {
             There's no tier to guess between and no fine print to read twice. Every bundle, closure, and frontal we carry, across all nine textures, is built to the same standard above: cuticle intact, cuticle aligned, hand-tied.
           </p>
           <p className="text-lg leading-relaxed">
-            Want the fuller story on how to tell real raw hair from hair that's been processed and relabeled? That full breakdown lives on our <a href="/faq" className="underline">FAQ</a>.
+            Want the fuller story on how to tell real raw hair from hair that's been processed and relabeled? That full breakdown lives on our <Link to="/about#faq" className="underline">FAQs</Link>.
           </p>
         </div>
       </section>
@@ -138,9 +139,9 @@ export default function Home() {
                 <h3 className="font-display font-bold text-lg">4x4 HD Transparent Lace Closures</h3>
                 <p className="text-base text-brand-on-surface-variant">Natural part, texture-matched to every bundle, built to the same three-point standard.</p>
               </div>
-              <a href="#" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
+              <Link to="/hair-guide#closures-frontals" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
                 Shop Now
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex flex-col gap-4">
@@ -152,9 +153,9 @@ export default function Home() {
                 <h3 className="font-display font-bold text-lg">13x4 HD Transparent Lace Frontals</h3>
                 <p className="text-base text-brand-on-surface-variant">Ear-to-ear, built for full parting flexibility, matched to the same three-point standard.</p>
               </div>
-              <a href="#" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
+              <Link to="/hair-guide#closures-frontals" className="font-display font-bold uppercase text-xs tracking-widest border-b-2 border-brand-red text-brand-red whitespace-nowrap ml-4">
                 Shop Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

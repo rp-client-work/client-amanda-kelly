@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   return (
     <footer className="bg-brand-black text-brand-white px-5 md:px-16 py-10 md:py-8">
@@ -6,9 +8,8 @@ export default function Footer() {
           AmandaKelly Co.
         </span>
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 font-display font-bold uppercase tracking-widest text-sm">
-          <a href="#" className="hover:text-brand-red transition-colors">Instagram</a>
-          <a href="#" className="hover:text-brand-red transition-colors">Vimeo</a>
-          <a href="#" className="hover:text-brand-red transition-colors">Terms</a>
+          <a href="https://instagram.com/amandakellycompany_" target="_blank" rel="noopener noreferrer" className="hover:text-brand-red transition-colors">Instagram</a>
+          <Link to="/terms" className="hover:text-brand-red transition-colors">Terms</Link>
         </div>
         <p className="font-display font-bold uppercase tracking-widest text-xs opacity-50">
           © 2024. All rights reserved.
