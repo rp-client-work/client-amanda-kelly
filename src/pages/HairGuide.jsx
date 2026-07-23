@@ -15,7 +15,7 @@ const compareRows = [
 
 const steps = ['Select Texture', 'Pick Your Length', 'Choose Quantity'];
 
-// Photography pending for these nine textures per intake notes, matching the
+// Photography pending for these textures per intake notes, matching the
 // homepage mapping. Do not reuse one origin's photo for its sibling.
 const textureData = [
   ['Burmese Curly', 'Tight, springy curl pattern with real bounce.', burmeseCurlyImg],
@@ -72,7 +72,7 @@ export default function HairGuide() {
       </section>
 
       <section className="px-5 md:px-16 py-12 md:py-20">
-        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-2">Nine Textures, Two Origins</h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-2">Our Textures, Two Origins</h2>
         <p className="text-brand-on-surface-variant max-w-xl mb-8">
           Burmese and Indian textures, plus Cambodian and Brazilian, each ship in every length from 14" to 32", as bundles, closures, and frontals.
         </p>

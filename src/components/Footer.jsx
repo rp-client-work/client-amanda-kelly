@@ -10,14 +10,14 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="bg-brand-black text-brand-white px-5 md:px-16 pt-10 md:pt-14 pb-24 lg:pb-8">
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 text-center md:text-left">
+      <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 text-center md:text-left">
         {/* Brand */}
         <div className="flex flex-col items-center md:items-start gap-3">
           <span className="font-display font-extrabold uppercase tracking-tight text-lg">
             AmandaKelly Co.
           </span>
           <p className="text-sm opacity-70 leading-relaxed max-w-xs">
-            Raw hair bundles, closures, and frontals across nine textures. Based in Baltimore, Maryland, shipping nationwide.
+            Raw hair bundles, closures, and frontals. Based in Baltimore, Maryland, shipping nationwide.
           </p>
           <a
             href="https://instagram.com/amandakellycompany_"
@@ -42,18 +42,6 @@ export default function Footer() {
               {link.label}
             </Link>
           ))}
-        </div>
-
-        {/* Visit Us */}
-        <div className="flex flex-col items-center md:items-start gap-3">
-          <span className="font-display font-bold uppercase tracking-widest text-xs text-brand-red">Visit Us</span>
-          <p className="text-sm opacity-70 leading-relaxed">
-            Baltimore, Maryland<br />
-            Local pickup available at checkout
-          </p>
-          <p className="text-sm opacity-70 leading-relaxed">
-            Orders ship nationwide across the United States
-          </p>
         </div>
 
         {/* Legal */}

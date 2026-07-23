@@ -10,7 +10,7 @@ import bodyWaveImg from '../assets/textures/texture-body-wave.webp';
 import closureImg from '../assets/products/closure-4x4-hd-lace.webp';
 import frontalImg from '../assets/products/frontal-13x4-hd-lace.webp';
 
-// Photography pending for these nine textures per intake notes. Textures with
+// Photography pending for these textures per intake notes. Textures with
 // a matching legacy asset use it as a placeholder; the rest render a plain
 // placeholder block until client photography lands. Do not reuse one origin's
 // photo for its sibling (e.g. Cambodian Straight vs. Brazilian Straight).
@@ -46,7 +46,7 @@ export default function Home() {
           Raw Hair Extensions | AmandaKelly Co.
         </h1>
         <p className="max-w-2xl text-brand-on-surface-variant">
-          Built to last, not just sold to you. AmandaKelly Co. is a raw hair extensions company. We sell raw hair bundles, closures, and frontals across nine textures, grouped under two origins, from 14" to 32". We ship nationwide across the US. One product line, built the same way for every order that leaves here.
+          Built to last, not just sold to you. AmandaKelly Co. is a raw hair extensions company. We sell raw hair bundles, closures, and frontals across a full range of textures, grouped under two origins, from 14" to 32". We ship nationwide across the US. One product line, built the same way for every order that leaves here.
         </p>
         <p className="max-w-2xl text-base text-brand-on-surface-variant">
           Retail, stylist, and wholesale accounts welcome. See options at checkout or reach out directly.
@@ -84,7 +84,7 @@ export default function Home() {
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">Our Quality Standard</h2>
         <div className="flex flex-col gap-6 max-w-2xl">
           <p className="text-lg leading-relaxed">
-            There's no tier to guess between and no fine print to read twice. Every bundle, closure, and frontal we carry, across all nine textures, is built to the same standard above: cuticle intact, cuticle aligned, hand-tied.
+            There's no tier to guess between and no fine print to read twice. Every bundle, closure, and frontal we carry, across every texture, is built to the same standard above: cuticle intact, cuticle aligned, hand-tied.
           </p>
           <p className="text-lg leading-relaxed">
             Want the fuller story on how to tell real raw hair from hair that's been processed and relabeled? That full breakdown lives on our <Link to="/about#faq" className="underline">FAQs</Link>.
@@ -95,7 +95,7 @@ export default function Home() {
       <section className="px-5 md:px-16 py-12 md:py-20">
         <h2 className="text-2xl md:text-4xl font-extrabold tracking-tight mb-2 text-center md:text-left">Shop by Texture</h2>
         <p className="text-brand-on-surface-variant max-w-xl mb-8">
-          Nine textures, two origins, every length from 14" to 32".
+          Two origins, every length from 14" to 32".
         </p>
         <div className="grid grid-cols-3 border-l-2 border-t-2 border-brand-black">
           {textures.map(([name, img, alt]) => (
@@ -118,7 +118,7 @@ export default function Home() {
         <div className="mt-10 max-w-3xl">
           <h3 className="font-display font-bold text-lg mb-2">Available Lengths?</h3>
           <p className="text-base text-brand-on-surface-variant leading-relaxed">
-            All nine textures ship in every length from 14" to 32", as bundles, closures, and frontals.
+            Every texture ships in every length from 14" to 32", as bundles, closures, and frontals.
           </p>
         </div>
         <p className="text-base text-brand-on-surface-variant max-w-2xl mt-6">
